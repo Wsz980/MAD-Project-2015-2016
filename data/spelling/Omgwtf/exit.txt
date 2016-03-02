@@ -1,0 +1,1704 @@
+
+var hotwordSerpRD = false;
+ask.dict.isHotWordEnabled = true;
+hotwordSerpRD = true;
+ask.dict.hotWordImgURL = "";
+headerlinkUpdates();
+updatePremiumlink();
+var _sourcepg ="dic_browse";
+var _countryState = "UT_US";
+var _translatemaxlength ="300";
+var _footerShown=false;
+var _impressionlogged = false;
+var pagekey = "dicSerpRedesign2";
+var takeOverEnabled = false;
+</script>
+<script type="text/javascript">
+var _qevents = _qevents || [];
+document.getElementById('q').value="exit";
+</script>
+<script type="text/javascript">
+isIE=false;
+isTlb = false;
+isToolbarInstalled(isIE,isTlb);
+</script>
+<center>
+<div id="dmain">
+
+
+<div id="results">
+<div id="diduno"></div>
+<div id="contentResults">
+<div id='dcomad_728x90_0' class='banner-ad ' >
+</div>
+<script type="text/javascript">
+var queryURLEncoded = escape("exit");
+var adpath = "5480.iac.dictionary/search";
+var uag = "";
+var uoc = "Other";
+var uge = "";
+var category = "";
+var site = "5480.iac.dictionary";
+</script>
+<div id="Headserp" class="Headserp">
+<span class="hdrrmn" style="float:left;">
+<span><h1 id="query_h1" class="query_h1">exit</h1></span>
+<span id="aud" class="aud" title="Listen to the pronunciation of exit"><span class="speaker" audio="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398500.mp3" default="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398500"><noscript><a onmousedown="spk(this,{lk:'nx1fkx',en:'wotdau',io:'0',b:'wotd',tp:'lrl',m:'wotdau'})" href="#"></a><a target="_blank" href="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398500"><img border="0" src="http://static.sfdict.com/dictstatic/g/d/speaker.gif"></a></noscript><a class="audspk" href="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398500.mp3"></a></span> </span>
+<span title="Add to Favorites">
+<span id="nonfav"></span>
+</span>
+<span id="fcimgh" class="fcimgh">
+</span>
+</span>
+<span class="hdrsc" style="float:left;">
+<span class="mdbt" onmouseover="enablemediabuttons()" style="display:none"></span>
+<span id="hdmd" class="hdmd">
+<span class="hdfb"></span>
+</span>
+</span>
+</div>
+<div id="midRail">
+<div id="rpane">
+
+<style>
+.slDL{
+font-family: "Verdana";
+font-size: 12px;
+color: #404040;
+line-height:16px;
+}
+</style>
+
+<script type="text/javascript">
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+</script>
+<style type="text/css">
+</style>
+<style>
+.slDL{
+font-family: "Verdana";
+font-size: 12px;
+color: #404040;
+line-height:16px;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+var longDescriptionPresent = false;
+var topHeavyCharCount = 60;
+var daisyMatchArray = new Array();
+var modConstantArray = new Array();
+var linkConstantArray = new Array();
+modConstantArray['top']='afcT';modConstantArray['bot']='afcB';modConstantArray['mid']='afcM';modConstantArray['mid1']='afcM1';modConstantArray['mid2']='afcM2';modConstantArray['mid3']='afcM3';
+linkConstantArray['top']='oq6zwg';linkConstantArray['bot']='e8zuyk';linkConstantArray['mid']='tdkbd2';linkConstantArray['mid1']='svydps';linkConstantArray['mid2']='j6rvjh';linkConstantArray['mid3']='u3d5w0';
+function render_ads(position, num, startIdx, endIdx) {
+var s = '';
+if(!num && !window['ajsl_ads']) {
+return;
+}
+var top=true;
+if(position == 'top' || position.indexOf('mid')!=-1){
+top=true;
+}else if(position == 'bot'){
+top=false;
+}
+window['sponsoredResultText'] = '<div class="the_label"></div>'
+var prefix = '\n<div class="spl_unshd_NC" id="'+position+'">';
+window['spLabel'] = 'Ads';
+if(num==1){
+window['spLabel'] = 'Ad';
+}
+var suffix = '</div>';
+var template = '<div class="slL">{label}</div> <div class="slANC" style="cursor:default;"> <a id="gg_{counter}" href="{url}" rel="nofollow" onMouseDown="{pickJavascript}" class="nu1NC" style="width:241px"> <span class="slTNC">{title}</span> </a> <br> <a id="gg_{counter}" href="{url}" rel="nofollow" onMouseDown="{pickJavascript}" class="nu1NC" style="width:241px"> <span class="slBNC">{visibleUrl}</span> </a> <br> <span class="slD">{abstract}</span> </div>';
+s += prefix;
+var ads = window['google_ads'];
+var ajslAds=window['ajsl_ads'];
+var spnrAds=window['spnr_ads'];
+for(var i = 0; i < ads.length;i++) {
+if((ads[i].line2.length+ads[i].line3.length) >= topHeavyCharCount){
+longDescriptionPresent = true;
+break;
+}
+}
+if(ajslAds){
+for(var i = 0; i < ajslAds.length;i++) {
+s += render_inhouse_ad(top,ajslAds , template,i)
+}
+}
+var ec=0;
+for(var i = startIdx, j=0; j<num && i <= endIdx;j++, i++) {
+s += render_ad(top, ads, template, startIdx, i, "gsl", num, 0,j,position);
+ec++;
+}
+if(position=='top' || position=='bot' || position.indexOf('mid')!=-1)
+daisyMatchArray[position]=num;
+window['ad_count_'+position]=ec;
+if(spnrAds){
+for(var i = 0; i < spnrAds.length;i++) {
+s += render_inhouse_ad(top,spnrAds ,template,i,true)
+}
+}
+//reset in house text ads to empty so that it will not be printed in the section where it is not required
+window['ajsl_ads']=null;
+window['spnr_ads']=null;
+s += suffix;
+document.write(s);
+if(false){
+document.getElementById('top').style.borderTop = "none";
+}
+}
+function render_ad(top, ads, template, offset, i, type, ec, set,j,position) {
+var displayAdLabelTop = 'false';
+var labelPosition = 'top';
+var fragment = template;
+var pickLog = "daisyPK(this, {en:'{en}',io:'{io}',b:'spl',tp:'(position)',lk:'{lk}',m:'{m}'}, '{ggid}')";
+if(labelPosition == 'top'){
+if(window['spShadedLabel'] && offset == i && set == 0) {
+fragment = fragment.replace(/\{label\}/, spShadedLabel);
+} else if(window['spLabel'] && (j==0)){
+fragment = fragment.replace(/\{label\}/, spLabel);
+}else {
+fragment = fragment.replace(/\{label\}/,"");
+}
+}else{
+if(window['spShadedLabel'] && offset == i && set == 0) {
+fragment = fragment.replace(/\{label\}/, spShadedLabel);
+} else if(window['spLabel'] && (offset+j == (ads.length - 1) || j == ec-1)){
+fragment = fragment.replace(/\{label\}/, spLabel);
+}else {
+fragment = fragment.replace(/\{label\}/,"");
+}
+}
+for(var k=0;fragment.indexOf("{pickJavascript}")!= -1;k++){
+fragment = fragment.replace(/\{pickJavascript\}/,(ads[i].adType == 'ta')?ads[i].pickJavascript:pickLog);
+fragment = fragment.replace(/\(position\)/,position);
+fragment = fragment.replace(/\{counter\}/,(top?"t_":"b_") + (i+1));
+if(position.indexOf("mid")!=-1){
+fragment = fragment.replace(/\{io\}/,i-offset);
+}else {
+fragment = fragment.replace(/\{io\}/, offset ? offset+i : i);
+}
+}
+fragment = fragment.replace(/\{en\}/g, "gc");
+fragment = fragment.replace(/\{ggid\}/g, "gg_" + (top?"t_":"b_") + (i+1));
+if(_daisyClickTrackingEnabled==='true'){
+fragment = fragment.replace(/\{m\}/g,modConstantArray[position]);
+fragment = fragment.replace(/\{lk\}/g,linkConstantArray[position]);
+}else{
+fragment = fragment.replace(/\{ec\}/g, ec);
+}
+fragment = fragment.replace(/\{url\}/g, ads[i].url);
+fragment = fragment.replace(/\{visibleUrl\}/, ads[i].visible_url.length > 65 ? ads[i].visible_url.substring(0, 65) : ads[i].visible_url);
+if(false){
+fragment = fragment.replace(/\{ncbmwidth\}/,"width:px");
+fragment = fragment.replace(/\{ncbm1width\}/,"width:px");
+}
+ads[i].line1 = highlightQuery(ads[i].line1);
+var dbgInfo="";
+if(false){
+adt = 'afc';
+if(ads[i].adType != null && 'ta' == ads[i].adType){
+adt = 'ta';
+}
+dbgInfo="[id=" + ads[i].n +",type="+adt+"]";
+}
+fragment = fragment.replace(/\{title\}/, dbgInfo+ads[i].line1);
+ads[i].line2 = highlightQuery(ads[i].line2);
+ads[i].line3 = highlightQuery(ads[i].line3);
+if(longDescriptionPresent){
+fragment = fragment.replace(/class=\"slD\"/,"class=\"slDL\"");
+}
+fragment = fragment.replace(/\{abstract\}/, ads[i].line2 + " " + ads[i].line3);
+return fragment;
+}
+function render_inhouse_ad(top, ads, template,i,label) {
+if(!label){
+label= false;
+}
+var fragment = template;
+if(window['spShadedLabel'] && i==window['ad_config_top']+ads.length-1) {
+fragment = fragment.replace(/\{label\}/, spShadedLabel);
+} else if((window['spLabel'] && i==window['ad_config_top']+ads.length-1 ) || label){
+fragment = fragment.replace(/\{label\}/, spLabel);
+}else {
+fragment = fragment.replace(/\{label\}/,"");
+}
+for(var k=0;fragment.indexOf("{pickJavascript}")!= -1;k++){
+fragment = fragment.replace(/\{pickJavascript\}/,ads[i].pickJavascript);
+fragment = fragment.replace(/\(position\)/,"");
+fragment = fragment.replace(/\{counter\}/,"");
+fragment = fragment.replace(/\{io\}/, i);
+}
+fragment = fragment.replace(/\{en\}/g, ads[i].adType);
+fragment = fragment.replace('gg_', ads[i].adType+"_" + i);
+fragment = fragment.replace(/\{ec\}/g, ads.length);
+fragment = fragment.replace(/\{url\}/g, ads[i].url);
+fragment = fragment.replace(/\{visibleUrl\}/, ads[i].visible_url.length > 65 ? ads[i].visible_url.substring(0, 65) : ads[i].visible_url);
+if(false){
+fragment = fragment.replace(/\{ncbmwidth\}/,"width:px");
+fragment = fragment.replace(/\{ncbm1width\}/,"width:px");
+}
+ads[i].line1 = highlightQuery(ads[i].line1);
+var dbgInfo="";
+if(false){
+dbgInfo="[id=" + ads[i].n +",type="+ads[i].adType +"]";
+}
+fragment = fragment.replace(/\{title\}/, dbgInfo+ads[i].line1);
+ads[i].line2 = highlightQuery(ads[i].line2);
+ads[i].line3 = highlightQuery(ads[i].line3);
+if(longDescriptionPresent){
+fragment = fragment.replace(/class=\"slD\"/,"class=\"slDL\"");
+}
+fragment = fragment.replace(/\{abstract\}/, ads[i].line2 + " " + ads[i].line3);
+return fragment;
+}
+var ajslAds=new Array();
+var spnrAds=new Array();
+var repeatAds="true";
+function debug_info_update_render_ads(){
+if(document.getElementById('afc_ads_recieved')){
+var no_of_ads_debug_info = document.createTextNode(google_ads.length);
+document.getElementById('afc_ads_recieved').appendChild(no_of_ads_debug_info);
+}
+}
+function google_ad_request_done(google_ads) {
+debug_info_update_render_ads();
+window['google_ads'] = google_ads;
+inhouseAds = false;
+if(window['google_ads'].length < 4)
+{
+inhouseAds=true;
+}
+getInHouseAds();
+window['ajsl_ads']=ajslAds;
+window['spnr_ads']=spnrAds;
+if(google_ads.length != 0) {
+apply_ad_config(google_ads.length);
+render_ads('top', window['ad_config_top'],window['ad_config_top_startIdx'],window['ad_config_top_endIdx']);
+}
+}
+function InHouseAd() {
+this.url = "";
+this.visible_url = "";
+this.line1 = "";
+this.line2 = "";
+this.line3 = "";
+this.pickJavascript = "";
+this.adType = "";
+this.n = "";
+}
+function getInHouseAds()
+{
+if(inhouseAds){
+}
+}
+function apply_ad_config(num) {
+window['ad_config_top'] = Math.min(5, num);
+window['ad_config_mid1'] = window['ad_config_mid2'] = num - window['ad_config_top'];
+window['ad_config_mid2'] = 0;
+window['ad_config_bot'] = 0;
+window['ad_config_top_startIdx'] = 0;
+window['ad_config_top_endIdx'] = window['ad_config_mid1_startIdx'] = window['ad_config_mid2_startIdx'] = window['ad_config_top'];
+window['ad_config_mid1_endIdx'] = window['ad_config_mid2_endIdx'] = num;
+window['ad_config_bot_startIdx'] = window['ad_config_bot_endIdx'] = 0;
+}
+if(false){
+google_ad_client = 'ca-aj-lexico-quot';
+google_ad_channel = 'channel-01';
+google_ad_output = 'js';
+google_max_num_ads = '2';
+google_page_url = '';
+google_num_ads_recieved= '';
+google_ad_type = 'text';
+google_image_size = '';
+google_language = '';
+google_country = '';
+google_encoding = 'utf8';
+google_safe = 'high';
+google_adtest = 'off';
+google_hints = '';
+google_kw = 'exit';
+google_kw_type = 'broad';
+google_ad_section = 'default';
+}else{
+google_ad_client = 'ca-aj-lexico-quot';
+google_ad_channel = 'channel-01';
+google_ad_output = 'js';
+google_ad_type = 'text';
+google_max_num_ads ='2';
+google_safe = 'high';
+google_encoding = 'utf8';
+google_hints = 'exit';
+google_ad_section='def';
+}
+var word_arr ;
+var word_arr_len ;
+function highlightQuery(input_str) {
+var queryTokenArray = "exit,";
+var tok_arr = queryTokenArray.split(",");
+for(tok_arr_idx=0; tok_arr_idx < tok_arr.length-1; tok_arr_idx ++) {
+if(isCombinationWord(tok_arr[tok_arr_idx])){
+word_arr = tok_arr[tok_arr_idx].split("-");
+word_arr_len = word_arr.length;
+first_pos = input_str.toLowerCase().indexOf(word_arr[0],0);
+if(first_pos !=-1) {
+input_str = highlightCombinationWords(input_str,first_pos);
+}
+}
+else {
+first_pos = input_str.toLowerCase().indexOf(tok_arr[tok_arr_idx],0);
+if(first_pos != -1) {
+input_str = highlightSimpleWords(input_str,tok_arr[tok_arr_idx],first_pos);
+}
+}
+}
+return input_str;
+}
+function isCombinationWord(word){
+if(word.indexOf("-") != -1){
+return true;
+}else{
+return false;
+}
+}
+function isAlpha(ch) {
+if (ch != null && ch.match(/^[a-zA-Z0-9\<\>]+$/)){
+return true;
+}
+return false;
+}
+function isQueryinInput(firstindex, input_str, j){
+for(i=firstindex; i< input_str.length ; ++i) {
+var currindex = i;
+if(!isAlpha(input_str.charAt(i))) {
+if(firstindex == currindex) {/* 2 consecutive non-alpha characters */
+firstindex++;
+}
+else {
+if(word_arr[j] != input_str.substring(firstindex,currindex).toLowerCase())
+return -1;
+if (j == word_arr_len-1) return currindex;
+else return isQueryinInput(currindex+1,input_str,++j);
+}
+}
+}
+if(j < word_arr_len) {
+if(word_arr[j] != input_str.substring(firstindex,currindex+1).toLowerCase())
+return -1;
+}
+return (currindex + 1) ;
+}
+function highlightCombinationWords(input_str,first_pos) {
+exactmatch = isQueryinInput(first_pos+word_arr[0].length,input_str,1) ;
+if(exactmatch !=-1 ) {
+bold_str = "<b>" + input_str.substring(first_pos,exactmatch) + "</b>";
+input_str = input_str.substring(0,first_pos) + bold_str + input_str.substring(exactmatch);
+next_pos = input_str.toLowerCase().indexOf(word_arr[0],exactmatch+7);
+while(next_pos != -1) {
+return highlightCombinationWords(input_str,next_pos);
+}
+}
+return input_str;
+}
+function highlightSimpleWords(input_str,token, first_pos) {
+var end_pos = first_pos + token.length;
+if(!isAlpha(input_str.charAt(end_pos)) && !isAlpha(input_str.charAt(first_pos-1))){
+bold_str = "<b>" + input_str.substring(first_pos,end_pos) + "</b>";
+input_str = input_str.substring(0,first_pos) + bold_str + input_str.substring(end_pos);
+next_pos = input_str.toLowerCase().indexOf(token,end_pos+7);
+}
+else {
+next_pos = input_str.toLowerCase().indexOf(token,end_pos);
+}
+while(next_pos != -1) {
+return highlightSimpleWords(input_str,token,next_pos);
+}
+return input_str;
+}
+</script>
+<script type="text/javascript" language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+<div>
+<div class="sep_top shd_hdr pb2 luna">
+<div class="KonaBody" style="padding-left:0px;">
+<div class="lunatext results_content frstluna">
+<!-- google_ad_section_start --><div class="luna-Ent"> <div class="header"> <h2 class="me">ex·it</h2><sup>1</sup> <span class="pronset"><span class="speaker" audio="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398500.mp3" default="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398500"><noscript><a onmousedown="spk(this,{lk:'nx1fkx',en:'wotdau',io:'0',b:'wotd',tp:'lrl',m:'wotdau'})" href="#"></a><a target="_blank" href="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398500"><img border="0" src="http://static.sfdict.com/dictstatic/g/d/speaker.gif"></a></noscript><a class="audspk" href="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398500.mp3"></a></span> <span class="show_ipapr" style="display: none;"><span class="prondelim">/</span><span class="pron">ˈɛg zɪt, ˈɛk sɪt</span><span class="prondelim">/</span> <a class="questionmark" href="/help/luna/IPA_pron_key.html" target="_blank"></a> <span class="pron_toggle" style="display:none;"><a class="pronlink" onclick="javascript:show_sp()" onmouseout="status='';return true;" onmouseover="status='Click to toggle pronunciation';return true;" alt="Toggle for Spelled" title="Click to show spelled">Show Spelled</a> </span></span><span class="show_spellpr" style="display: inline;"><span class="prondelim">[</span><span class="pron"><span class="boldface">eg</span>-zit, <span class="boldface">ek</span>-sit</span><span class="prondelim">]</span> <a class="questionmark" href="/help/luna/Spell_pron_key.html" target="_blank"></a> <span class="pron_toggle" style="display: none;"><a class="pronlink" onclick="javascript:show_ip()" onmouseout="status='';return true;" onmouseover="status='Click to toggle pronunciation';return true;" alt="Toggle for IPA" title="Click to show IPA">Show IPA</a> </span></span></span> </div> <div class="body"> <div class="pbk"> <span class="pg">noun</span> <div class="luna-Ent"><span class="dnindex">1.</span><div class="dndata">a way or passage out: <span class="ital-inline">Please leave the theater by the nearest exit.</span> </div></div><div class="luna-Ent"><span class="dnindex">2.</span><div class="dndata">any of the marked ramps or spurs providing egress from a highway: <span class="ital-inline">Take the second exit after the bridge for the downtown shopping district.</span> </div></div><div class="luna-Ent"><span class="dnindex">3.</span><div class="dndata">a going out or away; departure: <span class="ital-inline">to make one's exit.</span> </div></div><div class="luna-Ent"><span class="dnindex">4.</span><div class="dndata">a departure of an actor from the stage as part of the action of a play. </div></div><div class="luna-Ent"><span class="dnindex">5.</span><div class="dndata"><span class="varf">Also called <span class="secondary-bf">exit card.</span> </span><span class="labset"><span class="ital-inline">Bridge.</span> </span>a card that enables a player to relinquish the lead when having it is a disadvantage. </div></div> </div>
+<div id="rltqns">
+<div id="relatedQns">Relevant Questions</div>
+<div>
+<div id="leftqn" >
+<div class="qn" ><a class="qna" onmousedown="return pk(this,{lk:'jhm3zj',en:'relquest',io:'0',b:'relquest',tp:'d',m:'relquest'})" href="http://ask.reference.com/web?q=What State Is Exit 152 In?&o=100100" style="color: #06C;text-decoration: none;" >What State Is Exit 152 I...</a></div>
+<div class="qn" ><a class="qna" onmousedown="return pk(this,{lk:'jhm3zj',en:'relquest',io:'0',b:'relquest',tp:'d',m:'relquest'})" href="http://ask.reference.com/web?q=What Are Exit Polls?&o=100100" style="color: #06C;text-decoration: none;" >What Are Exit Polls?</a></div>
+</div>
+<div id="rightqn" >
+<div class="qn" ><a class="qna" onmousedown="return pk(this,{lk:'jhm3zj',en:'relquest',io:'0',b:'relquest',tp:'d',m:'relquest'})" href="http://ask.reference.com/web?q=What Is An Exit Poll?&o=100100" style="color: #06C;text-decoration: none;">What Is An Exit Poll?</a></div>
+<div class="qn" ><a class="qna" onmousedown="return pk(this,{lk:'jhm3zj',en:'relquest',io:'0',b:'relquest',tp:'d',m:'relquest'})" href="http://ask.reference.com/web?q=How Do Exit Polls Work?&o=100100" style="color: #06C;text-decoration: none;">How Do Exit Polls Work?</a></div>
+</div>
+</div>
+</div>
+<div class="pbk"> <span class="pg">verb (used without object)</span> <div class="luna-Ent"><span class="dnindex">6.</span><div class="dndata">to go out; leave. </div></div><div class="luna-Ent"><span class="dnindex">7.</span><div class="dndata"><span class="labset"><span class="ital-inline">Bridge.</span> </span>to play an exit card. </div></div> </div>
+<style type="text/css">
+</style>
+<div id="topfcrds" style="display:block;height:2px;"></div>
+<div id="fcrds" >
+<div id="fctimer" ><span>00:10</span></div>
+<div style="display:inline-block">
+<div class="fhdr">
+</div>
+<div id="fchead">
+<div class="txt1">
+<span class="frb">Exit</span>
+<span class="gc">is one of our favorite verbs.</span>
+</div>
+<div class="ftxt1" style="display:block;width:350px;">
+<span class="gc">So is <span class="fcnxt">peculate</span>. Does it mean:</span>
+</div>
+<div class="stxt1" style="display:none;width:350px;">
+<span class="gc">So is <span class="fcnxt">skedaddle</span>. Does it mean:</span>
+</div>
+<div class="ttxt1" style="display:none;width:350px;">
+<span class="gc">So is <span class="fcnxt">hornswoggle</span>. Does it mean:</span>
+</div>
+</div>
+</div>
+<div style="position:relative;bottom:5px;">
+<div id="fcont">
+<div id="cor" class="bdr2 ">
+<table style="margin-bottom:5px;">
+<tr><td><input type="radio" name="fcro" id="rcor" onmousedown="clicked = true;"/></td><td><span class="fecor" id="scor" onmousedown="clicked = true;clickedCont=true;rbselect='rcor';">to steal or take dishonestly (money, esp. public funds, or property entrusted to one's care); embezzle.</span></td></tr>
+</table>
+</div>
+<div id="incor" class="bdr3 " >
+<table>
+<tr><td><input type="radio" id="rincor" name="fcro" onmousedown="clicked = true;"/></td><td><span class="feincor" id="sincor" onmousedown="clicked = true;clickedCont=true;rbselect='rincor';">to flee; abscond:</span></td></tr>
+</table>
+</div>
+</div>
+<div id="scont" style="display:none;">
+<div id="cor1" class="bdr2 ">
+<table style="margin-bottom:5px;">
+<tr><td><input type="radio" name="fcro" id="rcor1" onmousedown="clicked=true;"/></td><td><span class="fecor" id="scor1" onmousedown="clicked = true;clickedCont=true;rbselect='rcor1';">to run away hurriedly; flee.</span></td></tr>
+</table>
+</div>
+<div id="incor1" class="bdr3 " >
+<table>
+<tr><td><input type="radio" id="rincor1" name="fcro" onmousedown="clicked = true;"/></td><td><span class="feincor" id="sincor1" onmousedown="clicked = true;clickedCont=true;rbselect='rincor1';">to flee; abscond:</span></td></tr>
+</table>
+</div>
+</div>
+<div id="tcont" style="display:none;">
+<div id="cor2" class="bdr2 ">
+<table style="margin-bottom:5px;">
+<tr><td><input type="radio" name="fcro" id="rcor2" onmousedown="clicked = true;"/></td><td><span class="fecor" id="scor2" onmousedown="clicked = true;clickedCont=true;rbselect='rcor2';">to swindle, cheat, hoodwink, or hoax.</span></td></tr>
+</table>
+</div>
+<div id="incor2" class="bdr3 " >
+<table>
+<tr><td><input type="radio" id="rincor2" name="fcro" onmousedown="clicked = true;"/></td><td><span class="feincor" id="sincor2" onmousedown="clicked = true;clickedCont=true;rbselect='rincor2';">to steal or take dishonestly (money, esp. public funds, or property entrusted to one's care); embezzle.</span></td></tr>
+</table>
+</div>
+</div>
+<div class="fcbot">
+<a id="fccl" onmousedown="return pk(this,{lk:'pxmmir',en:'fcdf',io:'0',b:'dynmm',tp:'d',m:'fcdf'});" href="http://dynamo.dictionary.com/61520/a-few-remarkable-verbs?mp_source=pxmmir" target="_blank">LEARN MORE FUN, UNUSUAL VERBS WITH WORD DYNAMO...</a>
+</div>
+</div>
+</div>
+<a href="http://dynamo.dictionary.com/61520/a-few-remarkable-verbs?mp_source=pxmmir" onmousedown="return pk(this,{lk:'pxmmir',en:'fcdfcls',io:'0',b:'dynmm',tp:'d',m:'fcdfcls',pt:'Default+Version+Close+Screen'});" target="_blank" class= "fwcrp"><div id="closeMod" class= "fcwrp"></div></a>
+<div class="pbk"> <span class="pg">verb (used with object)</span> <div class="luna-Ent"><span class="dnindex">8.</span><div class="dndata">to leave; depart from: <span class="ital-inline">Sign out before you exit the building.</span> </div></div> </div> </div> <div class="tail"> <hr class="ety"> <div class="ety"> <b><i>Origin: </i></b> <br /> <span class="rom-inline">1580–90;</span> partly < <span class="rom-inline">Latin</span> <span class="ital-inline">exitus</span> act or means of going out, equivalent to <span class="ital-inline">exi-,</span> variant stem of <span class="ital-inline">exīre</span> to go out (<span class="ital-inline">ex-</span> <a style="font-style:normal; font-weight:normal;" href="/browse/ex-">ex-</a><span class="x"><sup>1</sup></span> + <span class="ital-inline">īre</span> to go) + <span class="ital-inline">-tus</span> suffix of v. action; partly noun, v. use of <a style="font-style:normal; font-weight:normal;" href="/browse/exit">exit</a><span class="x"><sup>2</sup></span> </div> <br/> <div><span class="sectionLabel">Can be confused: </span> <a style="font-style:normal; font-weight:normal;" href="/browse/excited">excited</a>, <span class="secondary-bf">exited.</span> </div> </div></div><!-- google_ad_section_end -->
+</div>
+</div>
+</div>
+<div id="visual_the" style="margin-top:15px;">
+</div>
+</div>
+<script>
+_init_luna();
+show_sp();
+</script>
+<script type="text/javascript">
+if($j){
+$j('#nonfav').append('<a id="fncyb" href="" ></a>');
+$j('#fncyb').attr("href","http://app.dictionary.com/signup/core?source=favorites&fnCallback=loginuser&callbackAction=addToFav&domaindest=reference.com"+"&logindest="+ enc(window.location)) ;
+}
+</script>
+<style type="text/css">
+.slL{
+width:100%;
+}
+</style>
+
+<div>
+<div class="sep_top shd_hdr pb2">
+<div class="shortsrcname">Dictionary.com Unabridged</div>
+<div class="KonaBody" style="">
+<div class="lunatext results_content">
+<!-- google_ad_section_start --><div class="luna-Ent"> <div class="header"> <h2 class="me">ex·it</h2><sup>2</sup> <span class="pronset"><span class="speaker" audio="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398600.mp3" default="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398600"><noscript><a onmousedown="spk(this,{lk:'nx1fkx',en:'wotdau',io:'0',b:'wotd',tp:'lrl',m:'wotdau'})" href="#"></a><a target="_blank" href="http://dictionary.reference.com/audio.html/lunaWAV/E03/E0398600"><img border="0" src="http://static.sfdict.com/dictstatic/g/d/speaker.gif"></a></noscript><a class="audspk" href="http://static.sfdict.com/dictstatic/dictionary/audio/luna/E03/E0398600.mp3"></a></span> <span class="show_ipapr" style="display: none;"><span class="prondelim">/</span><span class="pron">ˈɛg zɪt, ˈɛk sɪt</span><span class="prondelim">/</span> <a class="questionmark" href="/help/luna/IPA_pron_key.html" target="_blank"></a> <span class="pron_toggle" style="display:none;"><a class="pronlink" onclick="javascript:show_sp()" onmouseout="status='';return true;" onmouseover="status='Click to toggle pronunciation';return true;" alt="Toggle for Spelled" title="Click to show spelled">Show Spelled</a> </span></span><span class="show_spellpr" style="display: inline;"><span class="prondelim">[</span><span class="pron"><span class="boldface">eg</span>-zit, <span class="boldface">ek</span>-sit</span><span class="prondelim">]</span> <a class="questionmark" href="/help/luna/Spell_pron_key.html" target="_blank"></a> <span class="pron_toggle" style="display: none;"><a class="pronlink" onclick="javascript:show_ip()" onmouseout="status='';return true;" onmouseover="status='Click to toggle pronunciation';return true;" alt="Toggle for IPA" title="Click to show IPA">Show IPA</a> </span></span></span> </div> <div class="body"> <div class="pbk"> <span class="pg">verb (used without object)</span> <div class="luna-Ent">(he or she) goes offstage (used as a stage direction, often preceding the <a onmousedown="return ct(this,53686)" href="/browse/name">name</a> of the character): <span class="ital-inline">Exit Falstaff.</span> </div> </div>
+</div> <div class="tail"> <hr class="ety"> <div class="ety"> <b><i>Origin: </i></b> <br /> <span class="rom-inline">1530–40;</span> < <span class="rom-inline">Latin</span> <span class="ital-inline">ex</span>(<span class="ital-inline">i</span>)<span class="ital-inline">it</span> literally, (he) goes out, 3rd singular present of <span class="ital-inline">exīre;</span> see <a style="font-style:normal; font-weight:normal;" href="/browse/exit">exit</a><span class="x"><sup>1</sup></span> </div> <br/> </div></div><!-- google_ad_section_end -->
+</div>
+</div>
+</div>
+<div class="rcr">
+Dictionary.com Unabridged<br />Based on the Random House Dictionary, © Random House, Inc. 2013.
+<br/>
+<a href='/cite.html?qh=exit&ia=luna' >Cite This Source</a>
+<div id="link_to_div">|</div>
+<a id="link_to_style" onclick="return ask.dict.link_functionnewserp(this);">Link To <b>exit</b></a>
+</div>
+<div class="sep_top shd_hdr ">
+<div class="shortsrcname">Collins</div>
+<div class="KonaBody" style="">
+<div class="lunatext results_content">
+<div class="dicTl">World English Dictionary</div>
+<table border="0" width="100%" cellspacing="4" cellpadding="3">
+<tr valign="top" class="tr1"><td colspan="2" class="td1"><b>exit</b> (ˈɛɡzɪt, ˈɛksɪt) <a id="dic_result" href="http://dictionary.reference.com/help/luna/IPA_pron_key.html" target="_blank"><img class="luna-Img" src="http://static.sfdict.com/dictstatic/g/d/dictionary_questionbutton_default.gif" border="0" alt="[Click for IPA pronunciation guide]" onmouseover="swapLunaImage('default', this);" onmouseout="swapLunaImage('selected', this);" /></a></td></tr>
+<tr valign="top"><td colspan="2">&nbsp;</td></tr>
+<tr valign="top" class="tr2"><td colspan="2" class="td2">&mdash;<b><i>n</i></b> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">1.&nbsp;&nbsp;</td><td class="td3n2">a way out; door or gate by which people may leave</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">2.&nbsp;&nbsp;</td><td class="td3n2">the act or an instance of going out; departure</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">3.&nbsp;&nbsp;</td><td class="td3n2">a.&nbsp;&nbsp;the act of leaving or right to leave a particular place</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">&nbsp;</td><td class="td3n2">b.&nbsp;&nbsp;(<i>as modifier</i>): <i>an exit visa</i> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">4.&nbsp;&nbsp;</td><td class="td3n2">departure from life; death</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">5.&nbsp;&nbsp;</td><td class="td3n2"><i>theatre</i> the act of going offstage</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">6.&nbsp;&nbsp;</td><td class="td3n2">(in Britain) a point at which vehicles may leave or join a motorway</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">7.&nbsp;&nbsp;</td><td class="td3n2"><i>bridge</i> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">&nbsp;</td><td class="td3n2">a.&nbsp;&nbsp;the act of losing the lead deliberately</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">&nbsp;</td><td class="td3n2">b.&nbsp;&nbsp;a card enabling one to do this</td></tr>
+<tr valign="top"><td colspan="2">&nbsp;</td></tr>
+<tr valign="top" class="tr2"><td colspan="2" class="td2">&mdash;<b><i>vb</i></b> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">8.&nbsp;&nbsp;</td><td class="td3n2">to go away or out; depart; leave</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">9.&nbsp;&nbsp;</td><td class="td3n2"><i>theatre</i> to go offstage: used as a stage direction: <i>exit Hamlet</i> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">10.&nbsp;&nbsp;</td><td class="td3n2"><i>bridge</i> to lose the lead deliberately</td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1">11.&nbsp;&nbsp;</td><td class="td3n2">(<i>sometimes tr</i>) <i>computing</i> to leave (a computer program or system)</td></tr>
+<tr valign="top"><td colspan="2">&nbsp;</td></tr>
+<tr valign="top" class="tr5"><td colspan="2" class="td5">[C17: from Latin <i>exitus</i> a departure, from <i>exīre</i> to go out, from <sc>ex-</sc><sup>1</sup> + <i>īre</i> to go]</td></tr>
+</table>
+<br />
+</div>
+</div>
+</div>
+<div class="sep_top bottomAd" align="center">
+<div id='dcomad_right_300x251_#search1#' class='box-ad ' >
+</div>
+</div>
+<div class="citesourceseperator"></div>
+<div class="sep_top1 shd_hdr1">
+<div class="KonaBody" style="">
+<div class="lunatext results_content">
+<table border="0" width="100%" cellspacing="4" cellpadding="3">
+<tr valign="top" class="tr1"><td colspan="2" class="td1"><b>Exit</b> (ˈɛɡzɪt, ˈɛksɪt) <a id="dic_result" href="http://dictionary.reference.com/help/luna/IPA_pron_key.html" target="_blank"><img class="luna-Img" src="http://static.sfdict.com/dictstatic/g/d/dictionary_questionbutton_default.gif" border="0" alt="[Click for IPA pronunciation guide]" onmouseover="swapLunaImage('default', this);" onmouseout="swapLunaImage('selected', this);" /></a></td></tr>
+<tr valign="top"><td colspan="2">&nbsp;</td></tr>
+<tr valign="top" class="tr2"><td colspan="2" class="td2">&mdash;<b><i>n</i></b> </td></tr>
+<tr valign="top" class="tr3"><td align="right" width="1%" class="td3n1"></td><td class="td3n2">(in Britain) a society that seeks to promote the legitimization of voluntary euthanasia</td></tr>
+</table>
+<br />
+</div>
+</div>
+</div>
+<div class="rcr">
+Collins English Dictionary - Complete & Unabridged 10th Edition<br />2009 © William Collins Sons & Co. Ltd. 1979, 1986 © HarperCollins<br />Publishers 1998, 2000, 2003, 2005, 2006, 2007, 2009
+<br/>
+<a href='/cite.html?qh=exit&ia=ced' >Cite This Source</a>
+</div>
+<div id="wordorgtop"></div>
+<div class="sep_top shd_hdr ">
+<div class="shortsrcname">Etymonline</div>
+<div class="KonaBody" style="">
+<div class="lunatext results_content">
+<div class="dicTl">Word Origin & History</div>
+<br/><span class="me">exit</span><br /><div class="body">1530s, from L. exit "he or she goes out," third person sing. pres. indicative of exire "go out," from ex- "out" + ire "go." Also from L. exitus "a leaving, a going out," noun of action from exire. Originally in English as a stage direction (late 15c.); sense of "door for leaving" is 1786. The verb is </div><a class="more"></a><span class="moreun"><div class="body">c.1600, from the noun; it ought to be left to stage directions and the clunky jargon of police reports. Related: Exited; exiting.</div><a class="less"></a></span>
+</div>
+</div>
+</div>
+<div class="rcr">
+Online Etymology Dictionary, © 2010 Douglas Harper
+<br/>
+<a href='/cite.html?qh=exit&ia=etymon' >Cite This Source</a>
+</div>
+<div class="sep_top shd_hdr ">
+<div class="shortsrcname">FOLDOC</div>
+<div class="KonaBody" style="">
+<div class="lunatext results_content">
+<div class="dicTl">Computing Dictionary</div>
+<p><h3><b>exit definition</b></h3><br />1. <programming> A <a id="dic_result" href="http://dictionary.reference.com/browse/library function">library function</a> in the <a id="dic_result" href="http://dictionary.reference.com/browse/C">C</a> and <a id="dic_result" href="http://dictionary.reference.com/browse/Unix">Unix</a> <a id="dic_result" href="http://dictionary.reference.com/browse/run-time library">run-time library</a> that causes the program to terminate and return control to the <a id="dic_result" href="http://dictionary.reference.com/browse/shell">shell</a>. The alternative to calling "exit" is simply to "fall off the end" of the program or its top-level, <a id="dic_result" href="http://dictionary.reference.com/browse/main">main</a>, routine. <br />Equivalent functions, possibly with different names, exist in pretty much every programming language, e.g. "exit" in <a id="dic_result" href="http://dictionary.reference.com/browse/Microsoft DOS">Microsoft DOS</a> or "END" in <a id="dic_result" href="http://dictionary.reference.com/browse/BASIC">BASIC</a>. <br />On exit, the <a id="dic_result" href="http://dictionary.reference.com/browse/run-time system">run-time system</a> closes open files and releases other resources. An <a id="dic_result" href="http://dictionary.reference.com/browse/exit status">exit status</a> code (a small integer, with zero meaning OK and other values typically indicating some kind of error) can be passed as the only argument to "exit"; this will be made available to the shell. Some languages allow the programmer to set up exit handler code which will be called before the standard system clean-up actions. <br />2. Any point in a piece of code where control is returned to the caller, possibly activating one or more user-provided exit handlers. This might be a <a id="dic_result" href="http://dictionary.reference.com/browse/return">return</a> statement, exit call (in sense 1 above) or code that raises an error condition (either intentionally or unintentionally). If the exit is from the top-level routine then such a point would typically terminate the whole program, as in sense 1. <br />(2008-05-15) <br /></p>
+</div>
+</div>
+</div>
+<div class="rcr">
+The Free On-line Dictionary of Computing, © Denis Howe 2010 <a href="http://foldoc.org" rel="nofollow">http://foldoc.org</a>
+<br/>
+<a href='/cite.html?qh=exit&ia=foldoc' >Cite This Source</a>
+</div>
+</div>
+<script>
+_init_luna();
+show_sp();
+</script>
+<script type="text/javascript">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+_init_luna();
+show_sp();
+</script>
+<div class="sep_top bottomAd" align="center">
+<div id='dcomad_bottom_300x249_#search1#' class='box-ad ' >
+</div>
+</div>
+
+<script type="text/javascript">
+if(ask.dict.isHotWordEnabled){
+ask.dict.enableHotwordLogging = true;
+hotword();
+}
+</script>
+<style type="text/css">
+/*This is done for enabling favorites on page load*/
+#fav,#nonfav{
+display:inline-block;
+}
+._vtad{
+border-top:1px solid #E4E4E4;
+}
+.slL {
+cursor: pointer;
+}
+#macnt
+{
+height: 22px;
+padding-top: 2px;
+}
+#Headserp
+{
+margin-top: 8px;
+}
+.the_content #Headserp{
+margin-top:0px;
+}
+</style>
+</div>
+</div>
+
+<div id="rightRail">
+<!--
+word Dynamo Module
+-->
+<div id="exsntBlock">
+<div id="exsntHdg">Example sentences</div>
+<div class="exsentences"><span>Upon the lender's <b>exit</b> there will be students and parents who will be unable to</span><div class="sentelipsis"></div><span class="sentcont"> pay for the school of their choice.</span></div>
+<div class="exsentences"><span>But if another enemy intercepts that floater, they'll scoop it up, and make a</span><div class="sentelipsis"></div><span class="sentcont"> beeline for the exit.</span></div>
+<div class="exsentences"><span>Deportees <b>exit</b> the deportation plane at the airport.</span></div>
+<div class="exsentences"><span>Entrance and <b>exit</b> ramps connect the streets at every intersection.</span></div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">While almost all of it is harmless, avoid the losing team's supporters as they <b>exit</b> the pub or stadium after a soccer match.</div>
+</div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">Her cabbie tells her she can beat the traffic by hopping out of the car and down an emergency staircase at the next <b>exit</b>.</div>
+</div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">What appeals to many of the site's boosters is the simplicity of the <b>exit</b>.</div>
+</div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">Then an integrated circuit compares the entrance and <b>exit</b> points to calculate the path of the light.</div>
+</div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">It is not clear when she left the room since key card records do not show times of <b>exit</b>.</div>
+</div>
+<div class="moresent" style="display:none;">
+<div class="exsentences">Employees must be able to open an <b>exit</b> route door from the inside at all times without keys, tools, or special knowledge.</div>
+</div>
+<a class="more"></a>
+<a class="less" style="display: none;"></a>
+</div>
+<!--
+Display ads1 rightrail Module
+-->
+<div style="margin-top:15px;text-align:center;">
+<div id='dcomad_top_300x250_1_#search1#' class='box-ad ' >
+</div>
+</div>
+<!--
+Relatedwords Slang rightrail Module
+-->
+<div id="wrapserp" ><a id="serppremium" onmousedown="return pk(this,{en:'prem300',io:0,b:'prem',tp:'rr1',m:'prem300',ec:1,lk:'z016vj'})" href="http://app.dictionary.com/signup/premium?mp_source=z016vj&logindest=http%3A%2F%2Fdictionary.reference.com%2Fbrowse%2Fexit">Enjoy Dictionary.com ad-free! Learn more</a></div>
+<div id="relatedwords">
+<div class="rwh">Related Words</div>
+<div class="fla">
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'0',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/exit poll">exit poll</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'1',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/exit strategy">exit strategy</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'2',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/way out">way out</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'3',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/afterburner">afterburner</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'4',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/blockade">blockade</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'5',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/dÃ©bouchÃ©">dÃ©bouchÃ©</a>
+</div>
+<div class="flav">
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'6',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/dead end">dead end</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'7',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/door">door</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'8',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/drain">drain</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'9',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/egress">egress</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'10',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/entrance pupil">entrance pupil</a>
+<a class="rey" onmousedown="return pk(this,{lk:'2ksc1p',en:'rlw12',io:'11',b:'rlwd',tp:'rr1',m:'rword'});" href="http://dictionary.reference.com/browse/exit pupil">exit pupil</a>
+</div>
+<div>
+<span class= "rlmr"><a class="nmore" onmousedown="return pk(this,{lk:'bwzk7c',en:'rlwmo',io:'0',b:'rlwd',tp:'rr1',m:'rlwmo'})" href="http://dictionary.reference.com/reverseresults?q=exit&db=reverse">MORE</a></span>
+</div>
+</div>
+<!-- slang--->
+<!--
+Idioms rightrail Module
+-->
+<!--
+Images Slider Module
+-->
+<!--
+Quotes Module
+-->
+<div id="quotesbox">
+<div class="qbox">
+<div class="qhdr">Quote Of The Day</div>
+<div class="qquote">
+<a href="http://quotes.dictionary.com/Poetry_whose_material_is_language_is_perhaps_the" onmousedown="return pk(this,{lk:'k3p087',en:'qumod',io:'0',b:'quot',tp:'rr1',m:'qumod'})">"Poetry, whose material is language, is perhaps the most human and least worldly of the art..."</a>
+</div>
+<div class="qblw">
+<div>
+<span><a class="qtn" href="http://quotes.dictionary.com/author/Hannah+Arendt" onmousedown="return pk(this,{lk:'rc2wb4',en:'auth',io:'0',b:'quot',tp:'rr1',m:'auth'})">-Hannah Arendt</a></span>
+<span class="qautia"> </span>
+<div class= "qsnmr"><a class="nmore" href="http://quotes.dictionary.com/search/exit" onmousedown="return pk(this,{lk:'j2hdmf',en:'more',io:'0',b:'quot',tp:'rr1',m:'more'})">MORE</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!--reults LD2-->
+</div> <!--results for new serp -->
+<style type="text/css">
+.nmorescr,.nmorescr:visited,.nmore, .nmore:visited,a.more, a.more:hover, a.less, a.less:hover{
+font-weight:normal;
+}
+</style>
+
+<div id="lr">
+
+<div class="rbox">
+<div class="rboxborder">
+<div class="hd">Related Searches</div>
+<div id="narrow">
+<div id="sM">
+<div id="s0" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/List+of+NJ+Turnpike+Exits?qsrc=2892&l=dir&o=10601" >List of nj turnpike ...</a></div>
+<div id="s1" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/New+Jersey+Exit+Tax?qsrc=2892&l=dir&o=10601" >New jersey exit tax</a></div>
+<div id="s2" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Interstate+Exit+Guide?qsrc=2892&l=dir&o=10601" >Interstate exit guid...</a></div>
+<div id="s3" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Ohio+Turnpike+Exit+Guide?qsrc=2892&l=dir&o=10601" >Ohio turnpike exit g...</a></div>
+<div id="s4" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Ohio+Turnpike+Exits?qsrc=2892&l=dir&o=10601" >Ohio turnpike exits</a></div>
+<div id="s5" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Sample+Exit+Letters?qsrc=2892&l=dir&o=10601" >Sample exit letters</a></div>
+<div id="s6" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Exit+Realty?qsrc=2892&l=dir&o=10601" >Exit realty</a></div>
+<div id="s7" class="eD dC"><a class="ey dC" href="http://ask.reference.com/related/Exit+Sign?qsrc=2892&l=dir&o=10601" >Exit sign</a></div>
+</div>
+</div>
+</div>
+</div>
+<script >
+pklogRelated("sM",{lk:'5k1a4a',en:'drs',io:'7',b:'rr08',tp:'d',m:'drs'},"s");
+</script>
+
+<div class="nbox ">
+<div class="hd"><span >Nearby Words</span></div>
+<div class="pt10" onclick="ask.dict.nearby.scrollUp()">
+</div>
+<div id="nBL">
+<div id="nB0" class="eD"><a href="/browse/existential+operator?qsrc=2446" >existential ope...</a></div>
+<div id="nB1" class="eD"><a href="/browse/existential+philosopher?qsrc=2446" >existential phi...</a></div>
+<div id="nB2" class="eD"><a href="/browse/existential+philosophy?qsrc=2446" >existential phi...</a></div>
+<div id="nB3" class="eD"><a href="/browse/existential+psych+ology?qsrc=2446" >existential psy...</a></div>
+<div id="nB4" class="eD"><a href="/browse/existential+psych-ology?qsrc=2446" >existential psy...</a></div>
+<div id="nB5" class="eD"><a href="/browse/existential+psychology?qsrc=2446" >existential psy...</a></div>
+<div id="nB6" class="eD"><a href="/browse/existential+quantifier?qsrc=2446" >existential qua...</a></div>
+<div id="nB7" class="eD"><a href="/browse/existential-psychology?qsrc=2446" >existential-psy...</a></div>
+<div id="nB8" class="eD"><a href="/browse/existential-quantifier?qsrc=2446" >existential-qua...</a></div>
+<div id="nB9" class="eD"><a href="/browse/existentialism?qsrc=2446" >existentialism</a></div>
+<div id="nB10" class="eD"><a href="/browse/existentialist?qsrc=2446" >existentialist</a></div>
+<div id="nB11" class="eD"><a href="/browse/existentialist+philosopher?qsrc=2446" >existentialist ...</a></div>
+<div id="nB12" class="eD"><a href="/browse/existentialist+philosophy?qsrc=2446" >existentialist ...</a></div>
+<div id="nB13" class="eD"><a href="/browse/existentialistic?qsrc=2446" >existentialisti...</a></div>
+<div id="nB14" class="eD"><a href="/browse/existentialistically?qsrc=2446" >existentialisti...</a></div>
+<div id="nB15" class="eD"><a href="/browse/existentially?qsrc=2446" >existentially</a></div>
+<div id="nB16" class="eD"><a href="/browse/existible?qsrc=2446" >existible</a></div>
+<div id="nB17" class="eD"><a href="/browse/existimation?qsrc=2446" >existimation</a></div>
+<div id="nB18" class="eD"><a href="/browse/existing?qsrc=2446" >existing</a></div>
+<div id="nB19" class="eD"><a href="/browse/existing+light?qsrc=2446" >existing light</a></div>
+<div id="nB20" class="eD "><a href="/browse/exit?qsrc=2446" class="nearByCurr dicColor" >exit</a></div>
+<div id="nB21" class="eD"><a href="/browse/exit+card?qsrc=2446" >exit card</a></div>
+<div id="nB22" class="eD"><a href="/browse/exit+email?qsrc=2446" >exit email</a></div>
+<div id="nB23" class="eD"><a href="/browse/exit+memo?qsrc=2446" >exit memo</a></div>
+<div id="nB24" class="eD"><a href="/browse/exit+permit?qsrc=2446" >exit permit</a></div>
+<div id="nB25" class="eD"><a href="/browse/exit+poll?qsrc=2446" >exit poll</a></div>
+<div id="nB26" class="eD"><a href="/browse/exit+pupil?qsrc=2446" >exit pupil</a></div>
+<div id="nB27" class="eD"><a href="/browse/exit+ramp?qsrc=2446" >exit ramp</a></div>
+<div id="nB28" class="eD"><a href="/browse/exit+strategy?qsrc=2446" >exit strategy</a></div>
+<div id="nB29" class="eD"><a href="/browse/exit+tax?qsrc=2446" >exit tax</a></div>
+<div id="nB30" class="eD"><a href="/browse/exit+visa?qsrc=2446" >exit visa</a></div>
+<div id="nB31" class="eD"><a href="/browse/exit+wound?qsrc=2446" >exit wound</a></div>
+<div id="nB32" class="eD"><a href="/browse/exit-card?qsrc=2446" >exit-card</a></div>
+<div id="nB33" class="eD"><a href="/browse/exit-poll?qsrc=2446" >exit-poll</a></div>
+<div id="nB34" class="eD"><a href="/browse/exit-pupil?qsrc=2446" >exit-pupil</a></div>
+<div id="nB35" class="eD"><a href="/browse/exit-strategy?qsrc=2446" >exit-strategy</a></div>
+<div id="nB36" class="eD"><a href="/browse/exit-tax?qsrc=2446" >exit-tax</a></div>
+<div id="nB37" class="eD"><a href="/browse/exitance?qsrc=2446" >exitance</a></div>
+<div id="nB38" class="eD"><a href="/browse/exitial?qsrc=2446" >exitial</a></div>
+<div id="nB39" class="eD"><a href="/browse/exlite?qsrc=2446" >exlite</a></div>
+<div id="nB40" class="eD"><a href="/browse/exmember?qsrc=2446" >exmember</a></div>
+<script >
+ask.dict.nearby.totalItems=41;
+ask.dict.nearby.centerCurrent('20');
+pklog("nBL",{lk:'1zv0ht',en:'dne',io:'0',b:'di1',tp:'d',m:'nrb'},"nB")
+</script>
+</div>
+<div class="pt12" onclick="ask.dict.nearby.scrollDown()">
+</div>
+</div>
+
+
+<div class="box sbox">
+<div class="hd">Synonyms</div>
+<div id="synonym">
+<div id="sY0" class="sE"><a class="ey dC" href="/browse/withdrawal">withdrawal</a></div>
+<div id="sY1" class="sE"><a class="ey dC" href="/browse/departure">departure</a></div>
+<div id="sY2" class="sE"><a class="ey dC" href="/browse/withdraw">withdraw</a></div>
+<div id="sY3" class="sE"><a class="ey dC" href="/browse/farewell">farewell</a></div>
+<div id="sY4" class="sE"><a class="ey dC" href="/browse/goodbye">goodbye</a></div>
+<div id="sY5" class="sE"><a class="ey dC" href="/browse/retreat">retreat</a></div>
+<div id="sY6" class="sE"><a class="ey dC" href="/browse/opening">opening</a></div>
+</div>
+<div>
+<span class= "synmr"><a class="nmore" href="http://thesaurus.com/browse/exit" onmousedown="return pk(this,{lk:'9pr7mv',en:'synmo',io:'0',b:'syn',tp:'lrl',m:'synmo'})">MORE</a></span>
+<a href="http://thesaurus.com/browse/exit" onmousedown="return pk(this,{lk:'hsxjhw',en:'synth',io:'0',b:'syn',tp:'lrl',m:'synth'})"><span class="slogo"></span></a>
+</div>
+</div>
+<script >
+pklog("synonym",{lk:'yikftd',en:'dy',io:'6',b:'di1',tp:'d',m:'sy'},"sY");
+</script>
+<div class="rqbox">
+<div class="hd" style="padding-bottom:5px;">Synonym Game</div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/152115/words-of-the-news-october-2011/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,0);">withdrawal</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/43031/essential-latin-roots-de/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,1);">demise</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/156568/fancy-words-for-things-you-already-know-words-for/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,2);">avenue</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/87526/you-may-get-in-trouble-if-you/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,3);">quit</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/156568/fancy-words-for-things-you-already-know-words-for/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,4);">outlet</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/42990/5th-grade-social-studies-vocabulary/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,5);">retirement</a></div>
+<div class="sE"><a class="ey" href="http://dynamo.dictionary.com/58/kindergarten/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'},null,6);">get</a></div>
+<div class= "nmr"><a class="nmore" href="http://dynamo.dictionary.com/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'})">PLAY</a></div>
+<a href="http://dynamo.dictionary.com/?mp_source=stcc5w" onmousedown="return pk(this,{lk:'stcc5w',en:'dyngame',io:'0',b:'mst',tp:'lrl',m:'dyngame'})"><span class="dylogo"></span></a>
+</div>
+<!--
+In-house ads Module
+-->
+<!--
+Sky ad Module
+-->
+<div class="lr_skyad">
+<div id='dcomad_left_160x600' class='sykscraper-ad ' >
+</div>
+</div>
+
+<div id="ltm"></div>
+</div>
+<script type="text/javascript">
+var logStickyFooter = false;
+$j = jQuery;
+var eventType = "mousedown";
+var popup = $j("#popup");
+$j('body').delegate('#favLink1','mousedown',function(){
+location.href = "http://app.dictionary.com/favorites";
+}
+);
+$j(document).bind(
+eventType,
+function(){
+popup.hide();
+}
+);
+$j('body').delegate('#nonfav','mousedown',function(){
+deleteFavoriteCount();
+});
+function redirectToAppcoreForSuperSession(){
+locationString = window.location.toString();
+if(Cookie.isEnabled()){
+Cookie.setCookie("fQ", "exit", "", "/", "reference.com");
+setDictionaryConsolidatedCookie('fC','*');
+}
+window.location = "http://app.dictionary.com/login/core/?logindest="+enc(locationString);
+}
+function headerChange(){
+var name = appCoreUsername;
+var clklogg = "{lk:'1fk8td',en:'hrdupgrd',io:'0',b:'nav',tp:'hdr',m:'hrdupgrd'}";
+if(validDictionaryPremiumUser == "false"){
+$j('#tpnv').html('<a href="http://app.dictionary.com/users/settings">'+'\n'+name+'\n'+'</a><a id="fvlp" style="padding-left:1px;" href="http://app.dictionary.com/favorites"><span class="favL"></span><span id="favLink"></span></a>'+'\n'+'<a href="http://app.dictionary.com/logout?logindest="'+enc(window.location.toString())+' "class="hdrlink" id="favLogout">Log Out </a><a id="upgd" class="hdrlink" href="http://app.dictionary.com/premium?logindest=" onmousedown=\"return pk(this,'+clklogg+')\">Upgrade</a>');
+}
+else if(fbUser=='y'){
+$j('#tpnv').html('<span class="fbuser"></span><span>Hi,</span><a href="http://app.dictionary.com/users/settings">'+'\n'+name+'\n'+'</a><a href="http://app.dictionary.com/favorites"><span class="favL"></span><span id="favLink"></span></a>'+'\n'+'<a href="http://app.dictionary.com/logout?logindest="'+enc(window.location.toString())+' "class="hdrlink" id="favLogout">Log Out</a>');
+}else {
+$j('#tpnv').html('<span>Hi,</span><a href="http://app.dictionary.com/users/settings">'+'\n'+name+'\n'+'</a><a href="http://app.dictionary.com/favorites"><span class="favL"></span><span id="favLink"></span></a>'+'\n'+'<a href="http://app.dictionary.com/logout?logindest="'+enc(window.location.toString())+' "class="hdrlink" id="favLogout">Log Out</a>');
+}
+}
+function makeFooterVisible(){
+var scrollTop = $j(window).scrollTop();
+var bodyHeight = $j('body').height();
+if(scrollTop >= 300 || bodyHeight < 930){
+$j("#sftr").css('visibility','visible');
+if(!logStickyFooter){
+logStickyFooter = true;
+(new Image()).src = 'http://app.reference.com/track/stickyFooter?site=dict&ldid=0&pageName=dic';
+}
+}
+}
+$j('body').delegate('#arcnt','mousedown',function(){
+pk(this,{lk:'f1h0vi',en:'forec',io:'0',b:'stfo',tp:'bot',m:'forec'});
+});
+$j('body').delegate('#afav','mousedown',function(){
+pk(this,{lk:'lwjk79',en:'fofav',io:'0',b:'stfo',tp:'bot',m:'fofav'});
+});
+$j('body').delegate('.ftr_logo','mousedown',function(){
+spk(this,{lk:'28rdro',en:'fologo',io:'0',b:'stfo',tp:'bot',m:'fologo'});
+});
+//variables for fcol
+isspellingProductEmpty = true;
+categoryFordictionaryAd = false
+supressStickyFooterForMobile = false
+$j(window).scroll(function(){
+makeFooterVisible();
+});
+$j(document).ready(function() {
+makeFooterVisible();
+$j("#bfpu>ul>li>.flog").attr("href","http://app.dictionary.com/login/core?source=footer&fnCallback=loginuser&callbackAction=showFavWords&domaindest=reference.com"+"&logindest="+ enc(window.location));
+$j("#brpu>ul>li>.flog").attr("href","http://app.dictionary.com/login/core?source=footer&fnCallback=loginuser&callbackAction=showRecent&domaindest=reference.com"+"&logindest="+ enc(window.location));
+$j("#bfpu>ul>li>.freg").attr("href","http://app.dictionary.com/signup/core?source=footer&fnCallback=loginuser&callbackAction=showFavWords&domaindest=reference.com"+"&logindest="+ enc(window.location));
+$j("#brpu>ul>li>.freg").attr("href","http://app.dictionary.com/signup/core?source=footer&fnCallback=loginuser&callbackAction=showRecent&domaindest=reference.com"+"&logindest="+ enc(window.location));
+registerBottomFavAction();
+});
+</script>
+
+<script type="text/javascript">
+visualThesaurusOnclick();
+if($('macnt') && $('htwt')){
+position = a10.util.findPos($('htwt'));
+y = position[1] + 36;
+$('htwt').style.top = y + 'px';
+}
+</script>
+
+</div> <!--dmain-->
+</center> <!--center that encloses dmain-->
+</div> <!--de-->
+</div> <!--cwrp-->
+<div id="nfotr">
+<div class="brftr">
+<div class="er">
+<a class="fdic" href="http://content.dictionary.com" onmousedown="pk(this,{lk:'20fqrf',en:'fdic',io:'0',b:'nav',tp:'bot',m:'fdic',pt:'Footer+Dictionary+Logo'});"></a>
+<div class="ptn">Partners:<a href="http://dictionary.reference.com/word" onmousedown="pk(this,{lk:'khlrub',en:'pwrd',io:'0',b:'prtnr',tp:'bot',m:'pwrd'});">Word</a><a href="http://www.bloglines.com/" onmousedown="pk(this,{lk:'lif9yl',en:'pblg',io:'0',b:'prtnr',tp:'bot',m:'pblg'});">Bloglines</a><a href="http://www.citysearch.com/" rel="nofollow" onmousedown="pk(this,{lk:'xzoji2',en:'pctysrch',io:'0',b:'prtnr',tp:'bot',m:'pctysrch'});">Citysearch</a><a href="http://www.thedailybeast.com/" rel="nofollow" onmousedown="pk(this,{lk:'r3vehy',en:'pdlybst',io:'0',b:'prtnr',tp:'bot',m:'pdlybst'});">The Daily Beast</a><a href="http://answers.ask.com/" onmousedown="pk(this,{lk:'tyg264',en:'paskansw',io:'0',b:'prtnr',tp:'bot',m:'paskansw'});">Ask Answers</a><a href="http://www.askkids.com/" onmousedown="pk(this,{lk:'lsfcwp',en:'paskkids',io:'0',b:'prtnr',tp:'bot',m:'paskkids'});">Ask Kids</a><a href="http://www.life123.com/" onmousedown="pk(this,{lk:'v3vdw8',en:'plife',io:'0',b:'prtnr',tp:'bot',m:'plife'});">Life123</a><a href="http://www.sendori.com/" onmousedown="pk(this,{lk:'9o2kq',en:'psendori',io:'0',b:'prtnr',tp:'bot',m:'psendori'});" >Sendori</a><a href="http://www.thesaurus.com/" onmousedown="pk(this,{lk:'1ow9ml',en:'pthes',io:'0',b:'prtnr',tp:'bot',m:'pthes'});" class="npr">Thesaurus</a></div>
+</div>
+</div>
+<div id="nfr">
+<div id="suggestWord"></div>
+<div class="bllt">Copyright &copy;&nbsp;<span title="Copyright ÃÂ©&nbsp;2013 Dictionary.com, LLC. All rights reserved.">2013 Dictionary.com, LLC</span>. All rights reserved.</div>
+<div class="blf">
+<a target="_top" rel="nofollow" href="http://dictionary.com/about" onmousedown="pk(this,{lk:'y0qla1',en:'abt',io:'0',b:'nav',tp:'bot',m:'abt'});">About</a>
+<a target="_top" rel="nofollow" href="http://dictionary.com/privacy" onmousedown="pk(this,{lk:'u2afv2',en:'prvplcy',io:'0',b:'nav',tp:'bot',m:'prvplcy'});">PRIVACY POLICY</a>
+<a target="_top" rel="nofollow" href="http://dictionary.com/terms" onmousedown="pk(this,{lk:'cuhe6x',en:'trmofuse',io:'0',b:'nav',tp:'bot',m:'trmofuse'});">Terms</a>
+<a target="_top" href="http://dictionary.com/api" onmousedown="pk(this,{lk:'goo175',en:'api',io:'0',b:'nav',tp:'bot',m:'api'});">API</a>
+<a target="_top" rel="nofollow" href="http://dictionary.com/careers" rel="nofollow" onmousedown="pk(this,{lk:'pm7vfr',en:'careers',io:'0',b:'nav',tp:'bot',m:'careers'});">Careers</a>
+<a target="_top" rel="nofollow" href="http://dictionary.com/mediakit" onmousedown="pk(this,{lk:'bga8c7',en:'advtus',io:'0',b:'nav',tp:'bot',m:'advtus'});">Advertise with Us</a>
+<a rel="nofollow" onmousedown="pk(this,{lk:'lnnyvs',en:'cnt',io:'0',b:'nav',tp:'bot',m:'cnt'});" target="_top" href="http://dictionary.com/contact">Contact Us</a>
+<a target="_top" style="cursor:pointer;" onmousedown="suggestWordAction('content.dictionary.com',false)">Suggest a Word</a>
+<a class="npr" target="_top" onmousedown="pk(this,{lk:'ehy6lf',en:'help',io:'0',b:'nav',tp:'bot',m:'help'});" rel="nofollow" href="http://dictionary.com/help">Help</a>
+</div>
+</div>
+</div>
+</div> <!--contouter-->
+<div id="sftr" >
+<div class="ftwr">
+<div class="bfp" id="bfpu">
+<ul>
+<li class="bpt"></li>
+<li style="line-height:14px;">Please <a class='flog'>Login</a> or <a class='freg'>Sign Up</a> to use the Favorites feature</li>
+<li class="bpb"></li>
+</ul>
+</div>
+<div class="bfp" id="brpu">
+<ul>
+<li class="bpt"></li>
+<li style="line-height:14px;">Please <a class='flog'>Login</a> or <a class='freg'>Sign Up</a> to use the Recent Searches feature</li>
+<li class="bpb"></li>
+</ul>
+</div>
+<div class="sftc">
+<a class="ftr_logo" href="#de" ></a>
+<a class="sfav"><div ></div><span>FAVORITES</span></a>
+<a class="srec" onmousedown="showRecentPopUp();"><div ></div><span>RECENT</span></a>
+<form action="/dic" onsubmit="return botformcheck()" class="mnfrm">
+<input size="20" value="search dictionary" id="bq" autoComplete="off" type="text" name="q" onclick="make_blank();"/>
+<button type="submit" value="" ></button>
+</form>
+<div class="ftsp">
+<script type="text/javascript">
+var showstickypromo = Cookie.getCookie("stad");
+if(showstickypromo == null){
+var showClose=true;
+stickyFooterAd('http://ad.doubleclick.net/adj/5480.iac.dictionary/stickyfooter;kw=;tile=;pos=bottom;sz=300x250;ord=@@cachebuster@@;?');
+}
+</script>
+</div>
+<a class="fCol" onclick="expandorCollpase();""></a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$j("body").delegate(".srec","mouseenter",function(){showRecentPopUp();
+});
+$j('body').delegate('#sftr','mouseleave',function(){
+$j('#brpu').hide();
+$j('#bfpu').hide();
+});
+</script>
+</div>
+<script>
+var didyouknow = '<div id="macnt" ><span class="wia">Did you know:</span><span class="wiac">One of the very last words in our dictionary is zyzzyva. <a class="lnktxt" href="http:\/\/dictionary.reference.com\/browse\/zyzzyva?qsrc=3086" onmousedown="daisyCT(this,53615,{en:\'amm\',io:0,b:\'di1\',tp:\'top\',m:\'alrtM\',ec:1,lk:\'jwc8dj\'})" onclick="closeThis(0,\'amm\')">Learn its creepy meaning.<\/a></span></div>' ;
+if(false){if($j('#diduno')){$j('#diduno').html(didyouknow);}}
+var linkrefer = '<div id="link_to_module" style="top:1558px;"><span class="link_text">Copy & paste this link to your blog or website to reference this page</span><input class="linkbox" onclick="this.select()" value="<a href=http://dictionary.reference.com/browse/exit />"></div>';
+if($j('#ltm')){$j('#ltm').html(linkrefer);}
+$j(document).ready(function(){
+playaudio();
+$j(".speaker").mouseenter();
+});
+function suggestWordAction(actionURL,isNoResults){
+if(isNoResults){
+spk(this,{"en":"swrdbnr","io":"0","b":"swrdbnr","tp":"swrdbnr","m":"suggest1","lk":"om4es7",pt:"Suggest a word Noresults"});
+}
+else{
+spk(this,{"en":"swrd","io":"0","b":"swrd","tp":"swrd","m":"suggest2","lk":"e2r2wp",pt:"Suggest a word"});
+}
+document.getElementById("suggestWord").innerHTML = '<form id=\"gen_web\" action=\"http://'+actionURL+'/contact?Suggestion&z=1\" method=\"post\"><input type=\"hidden\" value=\"General Website\" name=\"category\"><input type=\"hidden\" value=\"1\" name=\"z\"><input type=\"hidden\" value=\"1\" name=\"c\"></form>';
+document.getElementById("gen_web").submit();
+}
+</script>
+<script type="text/javascript">
+if(rsSpellSuggest=="false"){
+visualThesauruslazyOnclick();
+}
+else{
+visualThesaurusOnclick();
+}
+</script>
+<script type="text/javascript">
+$j(document).ready(function(){
+if($j('.mdbt')){
+$j(".mdbt").css("display","block");
+}
+});
+function enablemediabuttons(){
+if(typeof (jQuery)!="undefined"){
+$j(".mdbt").hover(function() {
+$j(".mdbt").css("display","none");
+$j(".hdmd").css("display","block");
+});
+$j(".hdfb").append('<iframe src="//www.facebook.com/plugins/like.php?href=http://dictionary.reference.com/browse/exit&amp;send=false&amp;ref=dic&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:86px; height:21px;" allowTransparency="true"></iframe>', function() {
+});
+$j(".hpt").append('<a href="http://pinterest.com/pin/create/button/?url=http://dictionary.reference.com/browse/exit%3Fs%3Dt&media=http://userlogos.org/files/logos/Daggles/dictionarycom.png&description=Dictionary_logo&ver=" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It"/></a>',function(){
+});
+}
+}
+</script>
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'http://rt.legolas-media.com/lgrt?ci=2&ti=1222&pbi=10791';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<span style="display:none">
+<script type="text/javascript">
+_qoptions = {
+qacct:"p-51zXP5Cc9sxvQ"
+};
+</script>
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'http://pixel.quantserve.com/seg/p-51zXP5Cc9sxvQ.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script type="text/javascript">
+// DO NOT REMOVE _quantgc function
+function _quantgc(n) {
+var c=document.cookie;if(!c)return '';
+var i=c.indexOf(n+"=");if(-1==i)return '';
+var len=i+n.length+1;
+var end=c.indexOf(";", len);
+return c.substring(len,end<0?c.length:end);
+}
+// Code below is customizable per publisher
+quantSegs = "";
+var _qsegs = _quantgc('__qseg').split('|');
+for (var i=0;i < _qsegs.length;i++) {
+var qArr=_qsegs[i].split("_")
+if (qArr.length>1) { quantSegs += ( qArr[1] + ","); }
+}
+</script>
+</span>
+<span style="display:none">
+<script type="text/javascript">
+_qevents.push( { qacct:"p-51zXP5Cc9sxvQ"} );
+</script>
+<noscript>
+<div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-51zXP5Cc9sxvQ.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+</span>
+<div id="spanids" style="height:1px;width:1px"></div>
+<script type="text/javascript">
+(function($){
+$.fn.renderspanids = function(){
+ghostwriter(
+"spanids",
+{
+insertType: "append",
+script: { text: "document.write('<img src=\"http://spanids.dictionary.com?bid=UP8BPZtlFI4fbZ7m&asid=UP8BPZtlFI5c7KUN&bidnew=1&asidnew=1&source=r\" height=\"1px\" width=\"1px\" />');" }
+}
+);
+}
+})(jQuery);
+var spanidsLoaded = false;
+jQuery(document).ready(function(){
+if(!spanidsLoaded){
+spanidsLoaded = true;
+jQuery("div[id=spanids]").renderspanids();
+}
+});
+</script>
+<div id="bkpix" style="display:none"></div>
+<script type="text/javascript">
+(function($){
+$.fn.renderbkpixel = function(){
+ghostwriter(
+"bkpix",
+{
+insertType: "append",
+script: { text: "document.write('<img src=\"http://tags.bluekai.com/site/5397\" width=\"1\" height=\"1\" />');" }
+}
+);
+}
+})(jQuery);
+var bkPixLoaded = false;
+$j(document).ready(function(){
+if(!bkPixLoaded){
+bkPixLoaded = true;
+$j("#bkpix").renderbkpixel();
+}
+});
+</script>
+<script>
+var btmConstantArray = new Array();
+btmConstantArray['top']='afcT';btmConstantArray['bot']='afcB';btmConstantArray['mid']='afcM';btmConstantArray['mid1']='afcM1';btmConstantArray['mid2']='afcM2';btmConstantArray['mid3']='afcM3';
+var DAISYCONST = {
+BLOCK : {key: 'block', value:'spl'},
+TEMPLATE: {key: 'template'},
+MODULES : {key: 'modules'},
+DISPLAY_COUNT : {key: 'displayCount'},
+COMMA_DELIMITER : {value:','},
+URL : {value:'/track/impressionClient'}
+};
+function getBlockTemplateModule(daisyMatchArray){
+var block = '';
+var template = '';
+var modules = '';
+var displayCount = 0;
+var btmArray = new Array();
+var count = 0;
+try{
+for (var i in daisyMatchArray) {
+if(count==0){
+block = DAISYCONST.BLOCK.value;
+template = i;
+displayCount = daisyMatchArray[i];
+modules = btmConstantArray[i];
+}else{
+block += DAISYCONST.COMMA_DELIMITER.value + DAISYCONST.BLOCK.value;
+template += DAISYCONST.COMMA_DELIMITER.value + i;
+modules += DAISYCONST.COMMA_DELIMITER.value + btmConstantArray[i];
+displayCount += DAISYCONST.COMMA_DELIMITER.value + daisyMatchArray[i];
+}
+count++;
+}
+btmArray[DAISYCONST.BLOCK.key]= block;
+btmArray[DAISYCONST.TEMPLATE.key]= template;
+btmArray[DAISYCONST.MODULES.key]= modules;
+btmArray[DAISYCONST.DISPLAY_COUNT.key]= displayCount;
+return btmArray;
+}catch(err){
+return new Array();
+}
+}
+function appendURLKeyAndValue(desgURL,key,value){
+if(null!=value && ''!=value){
+if(desgURL.indexOf("?")==-1)
+desgURL= desgURL+"?"+key+"="+value;
+else
+desgURL= desgURL+"&"+key+"="+value;
+}
+return desgURL;
+}
+function daisy_afc_match() {
+var _matchUrl= DAISYCONST.URL.value+"?site=dict&queryId=1B8C41F7C2DCAF87DAF2278D6F81FDA9&pageName=dic&impressionId=UP8BPZtlFI4B/58/&ldid=0";
+var btmArray = this.getBlockTemplateModule(daisyMatchArray);
+for (var i in btmArray) {
+_matchUrl = this.appendURLKeyAndValue(_matchUrl,i,btmArray[i]);
+}
+var urlPrefix = "http://app.reference.com";
+_matchUrl = urlPrefix + _matchUrl;
+(new Image()).src= _matchUrl;
+}
+//call to daisy afc match tracking
+daisy_afc_match();
+</script>
+<div id="quantserve" style="height:0px;width:0px"></div>
+<script type="text/javascript">
+(function($){
+$.fn.quantserve = function(){
+ghostwriter(
+"quantserve",
+{
+insertType: "append",
+script: {src: (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js"}
+}
+);
+}
+})(jQuery);
+jQuery(document).ready(function(){
+jQuery("div[id=quantserve]").quantserve();
+});
+</script>
+<script>
+$j("a").filter(function(index){
+var tmp = this.onmousedown;
+this.onmousedown ='';
+$j(this).mousedown(function(e){
+if(this.href!=='' && (this.href.indexOf("reference.com")== -1)){
+var crossDomain = "thesaurus.com|dictionary.com";
+crossDomain = crossDomain.split('|');
+for(var x in crossDomain){
+if((this.href.indexOf(crossDomain[x]) != -1)){
+var src = readCookie("rh");
+var mobc = readCookie("mw");
+if(mobc!=null){
+src=src + "&m=www";
+}
+this.href = appendReferrerHost(this.href,src);
+var pageTracker = _gat._getTrackerByName(); // Gets the default tracker.
+this.href = pageTracker._getLinkerUrl(this.href);
+}
+}
+}
+if("undefined" != typeof(tmp) && null != tmp && "" != tmp)
+{
+tmp.call(this);
+}
+});
+});
+</script>
+<div id="csPixel" style="display:none">
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6034776&cv=2.0&cj=1" style="display:none" width="0" height="0" alt="" />
+</noscript>
+<script type="text/javascript">
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6034776",c3:"",c4:(new String(window.location)).replace(/\?.*$/, "") });
+(function($){
+$.fn.renderscsPixel = function(){
+ghostwriter(
+"csPixel",
+{
+insertType: "append",
+script: { text: "document.write('<script src=\"" + (document.location.protocol == "https:" ? "https://sb" : "http://b")+ ".scorecardresearch.com/beacon.js"+"\"><\/script>');" }
+}
+);
+}
+})(jQuery);
+var csPixelLoaded = false;
+$j(document).ready(function(){
+if(!csPixelLoaded){
+csPixelLoaded = true;
+$j("#csPixel").renderscsPixel();
+}
+});
+</script>
+</div>
+<script type="text/javascript">
+(function($){
+$.fn.rendervisualthesaurus = function(){
+ghostwriter(
+"visual_the",
+{
+insertType: "append",
+script: { text: "document.write('<scr"+"ipt src=\"http://syndication.visualthesaurus.com/ddc/related.js?lang=en&word=exit\"><\/scr"+"ipt>');" },
+done:function(){
+$j('#fancybox-left, #fancybox-right').css({'background-image':'url("http://static.sfdict.com/en/i/dictionary/newserp/fancybox_blank.gif")','background-color':'transparent'});
+var images = '';
+var imagesArray = images.split(',');
+$j('.smg').attr('src',imagesArray[0]);
+$j('#imr').css('display','block');
+$j('.qauti').attr('src','http://static.sfdict.com/dictstatic/quotes/images/author_small/default_author.png');
+}
+}
+);
+}
+})(jQuery);
+jQuery(document).ready(function(){
+if($j("#visual_the").length > 0){
+jQuery("div[id=visual_the]").rendervisualthesaurus();
+}
+});
+</script>
+<script type="text/javascript">
+if(getRadiumCookie()){
+if(rsResultDomain == 'dictionary.reference.com'){
+document.write('<img src="http://rs.gwallet.com/r1/pixel/x4472" width="1" height="1" border="0" alt=""/>');
+}else if(rsResultDomain == 'thesaurus.com'){
+document.write('<img src="http://rs.gwallet.com/r1/pixel/x4473" width="1" height="1" border="0" alt=""/>');
+}else if(rsResultDomain == 'www.reference.com'){
+document.write('<img src="http://rs.gwallet.com/r1/pixel/x4472" width="1" height="1" border="0" alt=""/>');
+}
+}
+</script>
+<script type="text/javascript" lang="javascript">
+function slideshowevent(){
+var img = new Image();
+var url = "http://app.reference.com/track/close?pageName=dic&site=dict";
+img.src = url;
+}
+var modalWindow = {
+parent:"body",
+windowId:null,
+content:null,
+width:null,
+height:null,
+close:function()
+{
+$j(".modal-window").remove();
+$j(".modal-overlay").remove();
+$j('#aud').css("display","inline");
+},
+open:function()
+{
+var modal = "";
+modal += "<div class=\"modal-overlay\"></div>";
+modal += "<div id=\"" + this.windowId + "\" class=\"modal-window\" style=\"width:" + this.width + "px; height:" + this.height + "px; margin-top:-" + (this.height / 2) + "px; margin-left:-" + (this.width / 2) + "px;\">";
+modal += this.content;
+modal += "</div>";
+$j(this.parent).append(modal);
+$j('embed#speaker').attr("wmode","transparent");
+$j('#aud').css("display","none");
+$j(".modal-window").focus();
+$j(".modal-window").append("<a class=\"close-window\"></a>");
+$j(".close-window").click(function(){slideshowevent();modalWindow.close();});
+$j(".modal-overlay").click(function(){slideshowevent();modalWindow.close();});
+}
+};
+var openMyModal = function(source)
+{
+modalWindow.windowId = "myModal";
+modalWindow.width = 975;
+modalWindow.height = 545;
+modalWindow.content = "<iframe id='slidifr' width='975' height='545' frameborder='0' scrolling='no' allowtransparency='true' src='" + source + "'>&lt/iframe>";
+modalWindow.open();
+};
+function slideshowOpen(){
+$j(".icoMr").trigger('click');
+}
+</script>
+<style type="text/css">
+.modal-overlay
+{
+position:fixed;
+top:0;
+right:0;
+bottom:0;
+left:0;
+height:100%;
+width:100%;
+margin:0;
+padding:0;
+background:#000;
+opacity:.85;
+filter: alpha(opacity=85);
+-moz-opacity: 0.85;
+z-index:10001;
+}
+* html .modal-overlay
+{
+position: absolute;
+height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+.modal-window
+{
+position:fixed;
+top:50%;
+left:50%;
+margin:0;
+padding:0;
+z-index:10002;
+}
+* html .modal-window
+{
+position:absolute;
+}
+.close-window {
+position: absolute;
+top: -15px;
+right: -13px;
+width: 30px;
+height: 30px;
+background:transparent url('http://static.sfdict.com/en/i/dictionary/newserp/Sprite_Serp.png') -62px -109px;
+cursor: pointer;
+z-index: 1103;
+}
+</style>
+<div style="margin-left:200px; top:40px;">
+<p>
+<a href="#" onclick="openMyModal('http://dict.reference.com/'); return false;" class="icoMr"></a>
+</p>
+</div>
+<div id="adshopscripts" style="display:none"> </div>
+<script>
+$j(document).ready(function(){
+ghostwriter(
+"adshopscripts",
+{
+insertType: "append",
+script: { src: "http://sp.dictionary.com/sh/i/dict/dynamic_scripts.js?ver=1323423" },
+done: ghostwriter.flushloadhandlers
+}
+);
+});
+</script>
+<script type="text/javascript">
+$j(document).ready(function(){
+if ($j("#scpromo").length > 0){
+ghostwriter(
+"scpromo",
+{
+insertType: "append",
+script: { text: "document.write('<img src=\"\"/>');" }
+}
+);
+}
+});
+</script>
+<div id="neilsen" style="display:none"> </div>
+<script>
+$j(document).ready(function(){
+var url ="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-805928h&cg=0&cc=1&si="+escape(window.location.href)+"&rp="+escape(document.referrer)+"&ts=compact&rnd="+(new Date()).getTime();
+ghostwriter(
+"neilsen",
+{
+insertType: "append",
+script: { text:"document.write('<img src="+url+"/>')"}
+}
+);
+});
+</script>
+<script>
+$j(".pronset span").first().mousedown(function(){
+if(refreshAdsOnlyonce){
+setTimeout('clicksWithAdRefresh("audio")',20);
+}else{
+setTimeout('clicksWithoutAdRefresh("audio")',20);
+}
+});
+$j(".aud").mousedown(function(){
+if(refreshAdsOnlyonce){
+setTimeout('clicksWithAdRefresh("audio")',20);
+}else{
+setTimeout('clicksWithoutAdRefresh("audio")',20);
+}
+});
+function clicksWithAdRefresh(target){
+refreshDisplayAds();
+var url = '';
+if(refreshAdsOnlyonce){
+url = 'http://app.reference.com/track/clickInner?page=dic&target='+target+'&adrefresh=n&rnd='+(new Date()).getTime();
+}else{
+url = 'http://app.reference.com/track/clickInner?page=dic&target='+target+'&adrefresh=y&rnd='+(new Date()).getTime();
+}
+var img = new Image();
+img.src = url;
+}
+function clicksWithoutAdRefresh(target){
+var url = 'http://app.reference.com/track/clickInner?page=dic&target='+target+'&adrefresh=n&rnd='+(new Date()).getTime();
+var img = new Image();
+img.src = url;
+}
+$j(".more").click(function(){
+if(refreshAdsOnlyonce){
+clicksWithAdRefresh('expand');
+}else{
+clicksWithoutAdRefresh('expand');
+}
+});
+$j(".less").click(function(){
+if(refreshAdsOnlyonce){
+clicksWithAdRefresh('collapse');
+}else{
+clicksWithoutAdRefresh('collapse');
+}
+});
+$j(".sfav").click(function(){
+if(refreshAdsOnlyonce){
+clicksWithAdRefresh('favorite');
+}else{
+clicksWithoutAdRefresh('favorite');
+}
+});
+$j(".srec").click(function(){
+if(refreshAdsOnlyonce){
+clicksWithAdRefresh('recent');
+}else{
+clicksWithoutAdRefresh('recent');
+}
+});
+if($j(".prmore").length > 0){
+$j(".prmore").click(function(){
+if(refreshAdsOnlyonce){
+clicksWithAdRefresh('expand');
+}else{
+clicksWithoutAdRefresh('expand');
+}
+});
+}
+</script>
+<style type="text/css">
+#dict_header_content img[width="15"] {
+display:none;
+}
+#seasonHdr {
+background-position: center -10px;
+width: auto !important;
+margin: auto -140px;
+}
+#wdcb{height:25px;width:25px;right:25px !important;}
+</style>
+<script type="text/javascript">
+var adbackgroundImage =undefined;
+var loc=window.location.toString();
+if(queryURLEncoded =='bluster'){
+$j('#nfotr').css("padding-top","0px");
+$j(document).ready(function(){
+$j("#promo_serpTo").unbind('click');
+var gutterclickedpromonew = 'false';
+gutterClickpromonew = function (e) {
+if (gutterclickedpromonew == 'true' || !(e.target.nodeName == "BODY")) {
+return;
+}
+destURLnew ="http://app.reference.com/click/mq9pln?clksite=dict&clkpage=dic&clkld=0&clken=grail&clkord=0&clkblk=grail&clktemp=grail&clkmod=grail&clkdest=http%3A%2F%2Fhotword.dictionary.com%2Fbluster";
+window.open(destURLnew);
+}
+$j("#promo_serpTo").bind('click', gutterClickpromonew);
+});
+}
+if(typeof $j != 'undefined'){
+$j(document).ready(function(){
+try{
+setTimeout(ghostwriter.flushloadhandlers, 250);
+}catch(e){
+//do nothing
+}})}
+function updateRecentCookie(){
+if(Cookie.isEnabled() && window.location.host.indexOf('dictionary')!=-1) {
+var val=Cookie.getCookie("recsrch");
+var checker=Cookie.getCookie("chk_del");
+if(val){
+if(checker == null){
+Cookie.deleteCookie('recsrch','/','.reference.com');
+var exp = new Date();
+exp.setFullYear(exp.getFullYear());
+exp.setMonth(exp.getMonth());
+exp.setDate(exp.getDate()+1);
+exp.setHours(0);
+exp.setMinutes(0);
+var domain= ".reference.com"
+Cookie.setCookie("chk_del", "true", exp, "/", domain);
+}
+}
+}
+}
+updateRecentCookie();
+</script>
+<div id="ad" class="ad-banner"></div>
+<div id="logger" style="display:none"></div>
+<script type="text/javascript">
+function logAdBlock() {
+setDictionaryConsolidatedCookie('adblk',$j('#ad').is(':hidden'));
+if($j("#ad").length > 0 && $j('#ad').is(':hidden') ) {
+var ldvalue=0;
+if(_limitedDeployID!=""){
+ldvalue = _limitedDeployID;
+}
+var url = 'http://app.reference.com/track/adBlockerDetected?site=dict&page=dic&ldid=0&ord='+Math.round(Math.random() * 1000000000);
+var img = new Image();
+img.src = url;
+if(typeof _gaq !='undefined'){
+_gaq.push(['_trackEvent','adBlockerDetected','true']);
+}
+}
+}
+$j(document).ready(function(){
+setTimeout('logAdBlock()',2000);
+});
+</script>
+<script type="text/javascript">
+$j('body').delegate('#dic_result','mousedown',function(){
+pk(this,{"en":"1clk","io":"0","b":"d","tp":"mid","m":"1clk","lk":"nn1ov4"});
+});
+</script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+$j(document).ready(function(){
+$j("#overlayleftA").css("top", "84px");
+$j("#overlayRightA").css("top", "84px");
+}
+);
+</script>
+<style type="text/css">
+#wdcb{
+right: 214px !important;
+top: -19px;
+}
+#nfotr
+{
+padding-bottom: 29px;
+}
+</style>
+<script type="text/javascript">
+$j(document).ready(function(){
+if($j("#lr").length && $j("#de").length && $j(".lr_skyad").length)
+{
+var fromTop=$j(".lr_skyad").offset().top;
+var top= 720-fromTop;
+if(top >0)
+{
+$j(".lr_skyad").css({'top':top,'position' :'relative'});
+}
+if(top >0 && (($j("#nfotr").offset().top) < ($j(".lr_skyad").offset().top+$j(".lr_skyad").height())))
+{
+$j("#de").css('height',($j("#nfotr").offset().top +top+200));
+}
+}
+}
+);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

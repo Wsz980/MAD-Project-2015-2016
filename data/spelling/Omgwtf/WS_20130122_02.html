@@ -1,0 +1,370 @@
+
+<html>
+<head>
+
+<title>Spelling</title>
+
+<script type="text/javascript">
+<!--
+
+
+var vx = new Array(vmax);
+var vz = new Array(vmax);
+var vy = new Array(vmax);
+var vs = new Array(vmax);
+var v = 0;
+var optn = 1;
+var Qnum = 0;
+var doc_path = "";
+var temp_str = "";
+var correct = 0;
+var wrong = 0;
+var Answer = "";
+var clicked = 0;
+var vmax = vx.length + 1;
+var s0;
+var s0a;
+var s1a;
+var s1b;
+var s1c;
+var s2;
+var s2a;
+var s2b;
+var si = 1;
+var sp = 0;
+var sn = 1;
+var tcorrect = 0;
+var twrong = 0;
+var ttotal = 1;
+var tpercent = 0;
+tstring = "";
+tstring2 = "";
+ttemptotal = 0;
+ttempcorrect = 0;
+ttempwrong = 0;
+tsubtotal = "Scores for each set of 10 questions are:<br> ";
+var twin;
+var rpthrs;
+var rptmns;
+var rptscs;
+var rptstr = "";
+var rptmnth;
+var rptyr;
+var rptday;
+var rptsalt = -1;
+
+s0 = location.pathname;
+s1a = 0;
+s1a = s0.lastIndexOf("\\");
+s1b = 0;
+s1b = s0.lastIndexOf('/');
+s1c = Math.max(s1a, s1b);
+s1c = s1c + 1;
+s2a = s0.substr(s1c);
+s2b = s2a.toLowerCase();
+s0a = 0;
+
+
+var text;
+function prntpp(text) {
+    text = document;
+    print(text)
+}
+var dir = "up";
+var excount = 0;
+var oldcount = 0;
+var gme = 0;
+var rptdun = 0;
+var limit = 1000;
+var dlimit = 1000;
+var tlimit = 20;
+var timestart = 60;
+var tmeout;
+
+function startTimer() {
+    correct = 0;
+    document.form1.right.value = correct;
+    wrong = 0;
+    document.form1.wrong.value = wrong;
+    var tme = new Date();
+    hrs = tme.getHours();
+    mns = tme.getMinutes();
+    scs = tme.getSeconds();
+    strttme = hrs * 3600 + mns * 60 + scs;
+    clck();
+}
+function clck() {
+    var tme = new Date();
+    hrs = tme.getHours();
+    mns = tme.getMinutes();
+    scs = tme.getSeconds();
+    nowtme = hrs * 3600 + mns * 60 + scs;
+    totaltme();
+}
+function totaltme() {
+    if (dir == "up") {
+        count = nowtme - strttme;
+        if ((correct - wrong) > dlimit) {
+            alert("You completed " + tlimit + " questions in " + count
+                    + " seconds");
+            dlimit = 1000;
+            window.clearTimeout(tmeout);
+            maxscore();
+            wnopen('s', '#section3');
+            gme = 0;
+            strt();
+        }
+    } else {
+        count = (timestart + strttme - nowtme)
+        if (count < 1) {
+            if (rptdun == 0) {
+                alert("your score is " + (correct - wrong))
+                rptdun = 1;
+                window.clearTimeout(tmeout);
+                maxscore();
+                wnopen('s', '#section3');
+                gme = 0;
+                dir = "up";
+                strt();
+            }
+        }
+    }
+    excount = (correct - wrong - oldcount);
+    if (gme == 2) {
+        timestart = (timestart + excount)
+    }
+    oldcount = (correct - wrong);
+    if (count > 3600) {
+        hour = parseInt(count / 3600)
+    } else {
+        hour = 0
+    }
+    ;
+    if (count > 60) {
+        minut = parseInt(count / 60)
+    } else {
+        minut = 0
+    }
+    ;
+    if (minut < 10) {
+        minut = "0" + minut
+    }
+    ;
+    sec = parseInt(count - minut * 60);
+    if (sec < 10) {
+        sec = "0" + sec
+    }
+    ;
+    document.tmr.cntr.value = minut + ":" + sec;
+    tmeout = window.setTimeout("clck()", 1000);
+}
+function countdown() {
+    rptdun = 0;
+    correct = 0;
+    wrong = 0;
+    excount = 0;
+    oldcount = 0;
+    timestart = 60;
+    dir = 'down';
+    gme = 1;
+    wnopen('s', '#section2');
+    startTimer();
+}
+function givemetime() {
+    rptdun = 0;
+    correct = 0;
+    wrong = 0;
+    excount = 0;
+    oldcount = 0;
+    timestart = 60;
+    dir = 'down';
+    gme = 2;
+    wnopen('s', '#section2');
+    startTimer();
+}
+function twentyquestions() {
+    dlimit = 19;
+    tlimit = 20;
+    rptdun = 0;
+    correct = 0;
+    wrong = 0;
+    excount = 0;
+    oldcount = 0;
+    dir = 'up';
+    gme = 3;
+    wnopen('s', '#section2');
+    startTimer();
+}
+
+var j = 201;
+
+function rand_array(maxValue) {
+    adjrnge = rnge + 1;
+    num[0] = Math.floor(adjrnge * Math.random() + lownumb);
+    for (i = 1; i < 201; i++) {
+        num[i] = Math.floor(adjrnge * Math.random() + lownumb);
+        if (num[i] == num[i - 1]) {
+            while (num[i] == num[i - 1]) {
+                num[i] = Math.floor(adjrnge * Math.random() + lownumb);
+            }
+        }
+    }
+}
+
+
+
+
+
+//================================ //
+
+var pgnm = "Addition";
+opr = " + ";
+var lownumb=0;
+var rnge=5;
+var maxValue=(rnge+lownumb+1);
+var num=new Array(200);
+var j=201;
+
+function do_prob(){
+numA=num[j];
+j=j+2;
+numB=num[j];
+j++;
+numC=numB+numA;
+temp_str = "";
+document.form1.resulta.value = numA;
+document.form1.resultb.value = numB;
+temp_str = "";
+clicked=0;
+if (j>198){
+   rand_array(maxValue);
+   j=1;
+}
+}
+
+function strt(){
+   rand_array(maxValue);
+   j=1;
+   clicked=0;
+   document.form1.pctright.value = "";
+   document.form1.result1.value = "";
+   startTimer();
+   do_prob();
+}
+
+function chck(){
+
+  if (document.form1.Word.value == document.form1.Answer.value){
+      correct++; tcorrect++; ttempcorrect++;
+      document.form1.result1.value = document.form1.Word.value + " is Correct!";
+      document.form1.right.value = correct;
+      }
+      else{
+      wrong++; twrong++; ttempwrong++;
+      //document.form1.result1.value = (numA + opr + numB + " = " + numC);
+      //alert(numA + opr + numB + " = " + numC);
+      document.form1.wrong.value = wrong;
+      document.form1.result1.value = document.form1.Answer.value + " is Incorrect!";
+
+   }
+ 
+}
+
+function show(){
+	document.form1.result1.value = "The word is --- " + document.form1.Word.value;
+}
+
+
+
+// -->
+
+
+
+
+</script>
+</head>
+<body onload=strt()>
+
+
+
+<ul><ol>
+
+<li><span>
+
+
+<FORM NAME="form1">
+<embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H03/H0351500.mp3" align="texttop" height="15" width="17">
+
+    <INPUT type="text" value="" name="Answer" size=5>
+    <INPUT type="hidden" value="book" name="Word" size=5>
+    <input type="button" value="Submit" name="Submit" onClick="chck()"> 
+
+
+<FONT SIZE=+1>&nbsp; <INPUT type="text" value="Press the Start Button" name="result1" size=35> 
+    <input type="button" value="Give Up" name="Show" onClick="show()" class="bgbutton"> 
+<br>
+<span class='medbold'>
+You have <input type='text' value='' name='right' size=5 onFocus='this.blur()'> correct and 
+</span>&nbsp; 
+<input type='text' value='' name='wrong' size=5 onFocus='this.blur()'>
+    <span class='medbold'> incorrect.</span> 
+    </FORM>
+    
+
+
+</span>   
+<p></p>
+
+
+
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S07/S0777600.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/D01/D0107100.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T04/T0437400.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0231600.mp3" align="texttop" height="15" width="17"></span>
+<li>Non
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H04/H0472100.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P03/P0398500.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0246100.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0117600.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/I02/I0281800.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/O00/O0094300.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P00/P0056600.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0187100.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/A08/A0820200.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/U01/U0177100.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S00/S0047600.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/V00/V0088000.mp3" align="texttop" height="15" width="17"></span>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/M05/M0593800.mp3" align="texttop" height="15" width="17"></span>
+</ol></ul>
+
+
+<ul><ol>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H03/H0351500.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S07/S0777600.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/D01/D0107100.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T04/T0437400.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0231600.mp3" align="texttop" height="15" width="17"></span><li>Non<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H04/H0472100.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P03/P0398500.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0246100.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0117600.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/I02/I0281800.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/O00/O0094300.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P00/P0056600.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0187100.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/A08/A0820200.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/U01/U0177100.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S00/S0047600.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/V00/V0088000.mp3" align="texttop" height="15" width="17"></span><li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/M05/M0593800.mp3" align="texttop" height="15" width="17"></span></ol></ul>
+<br>
+<hr>
+<p></p>
+
+<ul><ol>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H03/H0351500.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/homogenize" target="new">homogenize</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S07/S0777600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/specious" target="new">specious</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/D01/D0107100.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/deduction" target="new">deduction</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T04/T0437400.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/transfer" target="new">transfer</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0231600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/pending" target="new">pending</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/M00/M0016600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/microbiotic" target="new">microbiotic</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/H04/H0472100.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/hydroponics" target="new">hydroponics</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P03/P0398500.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/photosynthesis" target="new">photosynthesis</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P02/P0246100.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/pentathlon" target="new">pentathlon</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0117600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/telekinesis" target="new">telekinesis</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/I02/I0281800.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/invidious" target="new">invidious</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/O00/O0094300.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/omniscient" target="new">omniscient</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/P00/P0056600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/pandemic" target="new">pandemic</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/T01/T0187100.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Texas" target="new">Texas</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/A08/A0820200.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Austin" target="new">Austin</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/U01/U0177100.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Utah" target="new">Utah</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/S00/S0047600.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Salt Lake City" target="new">Salt Lake City</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/V00/V0088000.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Vermont" target="new">Vermont</a>
+<li><span><embed type="application/x-shockwave-flash" src="http://static.sfdict.com/dictstatic/d/g/speaker.swf" id="speaker" quality="high" loop="false" menu="false" salign="t" allowscriptaccess="sameDomain" wmode="transparent" flashvars="soundUrl=http://static.sfdict.com/dictstatic/dictionary/audio/luna/M05/M0593800.mp3" align="texttop" height="15" width="17"></span> <a href="http://dictionary.reference.com/browse/Montpelier" target="new">Montpelier</a>
+</ol></ul>
+</body>
+</html>
+
