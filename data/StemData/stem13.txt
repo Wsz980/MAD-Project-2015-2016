@@ -1,0 +1,25 @@
+chrom 	color 
+form 	shape 
+glyc 	sweet 
+gress 	step 
+hemo 	blood 
+infra 	beneath 
+labor 	work 
+leuko 	white 
+lys 	break down 
+mem 	remember 
+meso 	middle 
+milli 	thousandth 
+myo 	muscle 
+oligo 	few or small 
+ose 	sugar 
+osis 	condition 
+patho 	disease 
+phag 	eat 
+phor 	carry 
+phyll 	leaf 
+phyt 	plant 
+sequ 	follow 
+tude 	state of 
+ultima 	last 
+vac 	empty 

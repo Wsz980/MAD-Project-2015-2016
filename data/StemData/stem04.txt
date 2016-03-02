@@ -1,0 +1,25 @@
+amphi 	both 
+bene 	good 
+corp 	body 
+dorm 	sleep 
+dox 	opinion 
+endo 	within 
+eu 	good 
+ject 	throw 
+loco 	place 
+magn 	great 
+mega 	large 
+matri 	mother 
+morph 	shape 
+nov 	new 
+ortho 	straight 
+pater 	father 
+phobia 	fear 
+pond 	weight 
+pop 	people 
+punct 	point 
+put 	think 
+sangui 	blood 
+tion 	act or state 
+ver 	true 
+vest 	clothes  

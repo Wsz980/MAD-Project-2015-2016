@@ -1,0 +1,25 @@
+alt 	high 
+ate 	cause 
+cad 	fall 
+capit 	head 
+carn 	flesh 
+cor 	heart 
+crypt 	hidden 
+curs 	run 
+ess 	female 
+ethno 	race or culture 
+fug 	flee 
+gen 	origin 
+ics 	art 
+iso 	equal 
+loqu 	talk 
+mort 	death 
+muta 	change 
+nat 	born 
+ness 	quality 
+paleo 	old 
+ped 	foot or child 
+psych 	soul 
+sacro 	holy 
+uni 	one 
+vert 	turn 

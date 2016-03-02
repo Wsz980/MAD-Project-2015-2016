@@ -1,0 +1,25 @@
+-a 	plural 
+dom 	rule 
+erg 	work 
+frater 	brother 
+hippo 	horse 
+para 	beside or near 
+pleo 	more 
+pod 	foot 
+rhiz 	root 
+rhodo 	rose 
+sapro 	rotten 
+schizo 	divide 
+sect 	cut 
+som 	body 
+soror 	sister 
+spor 	seed 
+sta 	stop 
+taxis 	arrangement 
+tox 	poison 
+trich 	hair 
+troph 	nourishment 
+val 	worth 
+vol 	will 
+zygo 	yoke 
+zym 	ferment 

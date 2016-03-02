@@ -1,0 +1,25 @@
+arthro 	joint 
+blasto 	embryo 
+brachio 	arm 
+brachy 	short 
+branchio 	gills 
+dactylo 	finger 
+dextro 	right or clockwise 
+dicho 	in two parts 
+dors 	back 
+ef 	out 
+gastro 	stomach 
+gon 	angle 
+haplo 	single or simple 
+holo 	whole 
+ium 	an element 
+kin 	motion 
+lent 	full of 
+lite 	mineral or fossil 
+macro 	large 
+opia 	sight 
+phos 	light 
+phylo 	kind 
+tropo 	turn 
+ventri 	belly 
+vore 	eating 

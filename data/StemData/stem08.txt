@@ -1,0 +1,25 @@
+anim 	mind 
+apt 	fit 
+cur 	care for 
+demi 	half 
+fy 	make 
+gest 	carry 
+leg 	read 
+man 	hand 
+meta 	change 
+mir 	wonder 
+nym 	name 
+ocul 	eye 
+oid 	appearance 
+petr 	rock 
+rect 	right 
+retro 	backward 
+rid 	laugh 
+sanct 	holy 
+sed 	sit 
+sens 	feel 
+tact 	touch 
+tort 	twist 
+ultra 	beyond 
+voc 	voice 
+volv 	roll 

@@ -1,0 +1,25 @@
+a 	not 
+ambul 	walk 
+-ar 	relating to 
+caco 	bad 
+co 	together 
+fid 	faith 
+fin 	end 
+fract 	break 
+graph 	write 
+hedron 	sided object 
+hetero 	different 
+hexa 	six 
+in 	in or not 
+ine 	nature of 
+lat 	side 
+lith 	rock 
+nomy 	law 
+ous 	full of 
+path 	feeling 
+phile 	love 
+platy 	flat 
+sci 	know 
+theo 	god 
+topo 	place 
+tract 	pull 
